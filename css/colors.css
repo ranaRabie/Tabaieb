@@ -1,0 +1,205 @@
+::-moz-selection, ::-moz-selection {
+  color: #fff;
+  background: #27d6a6;
+}
+
+::-moz-selection, ::selection {
+  color: #fff;
+  background: #27d6a6;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  color: #020202;
+}
+
+.bg-primary, .btn-primary {
+  background: #020202 !important;
+}
+
+.text-primary {
+  color: #020202 !important;
+}
+
+.border-primary {
+  border-color: #020202 !important;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: #27d6a6 !important;
+}
+
+.text-secondary {
+  color: #27d6a6 !important;
+}
+
+.border-secondary {
+  border-color: #27d6a6 !important;
+}
+
+.btn-primary, .btn-secondary {
+  color: #fff !important;
+}
+
+.btn-primary, .btn-secondary {
+  border-color: transparent !important;
+}
+
+.bg-primary-gradient-x {
+  background: #16c2c5;
+  background: -webkit-gradient(linear, left top, right top, from(#27d6a6), to(#16c2c5));
+  background: linear-gradient(to right, #27d6a6 0%, #16c2c5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, mainGradColor1)', endColorstr='map-get($colors, mainGradColor2)', GradientType=1);
+}
+
+.bg-secondaryLight {
+  background-color: #f1f8f6 !important;
+}
+
+.text-light {
+  color: #acb3bb !important;
+}
+
+.link-secondary {
+  color: #27d6a6;
+}
+
+.link-secondary:hover {
+  color: #1cad85;
+}
+
+/* NavBar */
+#main-header .navbar-nav .nav-item .nav-link {
+  color: #020202 !important;
+}
+
+#main-header .navbar-nav .nav-item.active .nav-link, #main-header .navbar-nav .nav-item:hover .nav-link {
+  color: #27d6a6 !important;
+}
+
+#main-header .extra-links .navbar-nav .nav-item:before {
+  background: #e6e3f3;
+}
+
+#main-header .navbar-nav .nav-item.active .nav-link:after {
+  background: #27d6a6;
+}
+
+/* Footer */
+#main-footer {
+  background: #dce7ee;
+}
+
+.footer-menu a {
+  color: #020202;
+}
+
+.footer-menu a:hover {
+  color: #27d6a6;
+}
+
+.footer-social a {
+  color: #bbb8d3;
+}
+
+.footer-social a:hover {
+  color: #27d6a6;
+}
+
+/* Intro */
+.form-secondary .form-control {
+  border-color: #27d6a6;
+}
+
+.form-secondary .form-control, .form-secondary .form-control::-webkit-input-placeholder {
+  color: #27d6a6;
+}
+
+.form-secondary .form-control, .form-secondary .form-control:-ms-input-placeholder {
+  color: #27d6a6;
+}
+
+.form-secondary .form-control, .form-secondary .form-control::-ms-input-placeholder {
+  color: #27d6a6;
+}
+
+.form-secondary .form-control, .form-secondary .form-control::placeholder {
+  color: #27d6a6;
+}
+
+.form-secondary .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+}
+
+.form-secondary .form-group i {
+  color: #27d6a6;
+}
+
+/* Doctors */
+.doc-price {
+  background: #cdf6ea;
+  color: #27d6a6;
+}
+
+.doc-dets {
+  color: #acb3bb;
+}
+
+.doc-n {
+  color: #020202;
+}
+
+.doc-rating i.active {
+  color: #ffc300;
+}
+
+/* Features */
+.feature-icon {
+  background: #13b286;
+  -webkit-box-shadow: 0 0 0 5px rgba(19, 178, 134, 0.25);
+          box-shadow: 0 0 0 5px rgba(19, 178, 134, 0.25);
+}
+
+#h-book .feature-num {
+  background-color: #27d6a6;
+}
+
+#h-book .feature-desc {
+  color: #acb3bb;
+}
+
+#h-book .feature-special .feature-icon {
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+#h-book .feature-special {
+  background-color: #27d6a6;
+}
+
+#h-book .feature-special, #h-book .feature-special .feature-desc {
+  color: #fff !important;
+}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*# sourceMappingURL=colors.css.map */

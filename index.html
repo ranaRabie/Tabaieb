@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabaieb</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div class="main-wrapper">
+<header id="main-header">
+    <div id="top-bar">
+        <div class="container">
+
+        </div>
+    </div>
+    <div id="header-wrap">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <div class="d-flex align-items-center">
+                    <a id="navbar-toggler-lnk" href="javascript:void(0)" class="btn btn-secondary mr-3" onclick="mobOpenMainMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Tabaieb Logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a id="navbar-close-lnk" onclick="mobCloseMainMenu()"><i class="fas fa-times-circle"></i></a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appontment.html">my appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about tabaied</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="extra-links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="seacrh.html"><i class="fas fa-search"></i> search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="z_index-rtl.html"><i class="fas fa-globe"></i> ar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+</header>
+<section id="home-intro" style="background: url(images/bg-main.png) no-repeat 50% 50%;background-size: cover;">
+    <div class="container">
+        <div class="intro-inner">
+            <div class="intro-header text-white text-capitalize text-center">
+                <h2 class="font-weight-bold" data-delay="1000" data-aos="flip-up">find & book your <span class="text-secondary">favourite doctor</span></h2>
+                <h5 class="font-weight-bold" data-delay="1500" data-aos="fade-in">have a video/voice call</h5>
+            </div>
+            <div class="intro-search" data-delay="2000" data-aos="fade-up">
+                <form class="form-secondary">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <div class="form-group">
+                                <label for="">search by name</label>
+                                <input type="text" class="form-control" placeholder="search by name">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <div class="form-group">
+                                <label for="">select specialities</label>
+                                <select class="form-control bootstrap-select">
+                                    <option value="">select specialities</option>
+                                    <option value="">select specialities</option>
+                                    <option value="">select specialities</option>
+                                    <option value="">select specialities</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <div class="form-group">
+                                <label for="">available time from</label>
+                                <input type="text" class="form-control datepicker" placeholder="pick time">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <div class="form-group">
+                                <label for="">available time to</label>
+                                <input type="text" class="form-control datepicker" placeholder="pick time">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <div class="search-confirm">
+                                <button type="button" class="btn bg-primary-gradient-x text-white w-100">search now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-content">
+    <div id="h-docs" class="bg-secondaryLight py-5">
+        <div class="container">
+            <div class="heading-blk text-center mb-5" data-aos="fade-down">
+                <h4 class="heading-tit-wz-after font-weight-bold">public <span class="text-secondary">doctors</span><br><img src="images/heading-after.png"></h4>
+            </div>
+            <div class="docs-container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="doc-item" data-aos="fade-in">
+                            <div class="doc-img">
+                                <img src="images/doc-01.png">
+                                <div class="doc-price">120 rs/h</div>
+                            </div>
+                            <div class="doc-dets">
+                                <h6 class="doc-n">oamr mohamed ahmed</h6>
+                                <div class="doc-s">proffesor of cardiothoracic surgery</div>
+                                <div class="doc-rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="doc-extra-dets">
+                                    <div><img src="images/icons/time-date.png" > available on: 23 sep</div>
+                                    <div><img src="images/icons/clock.png" > from: 12:45 to: 5:50</div>
+                                    <div class="text-secondary"><img src="images/icons/coupon.png" > accept coupon discount</div>
+                                </div>
+                                <a href="#" class="doc-book-btn btn btn-secondary btn-sm">book now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="doc-item" data-aos="fade-in">
+                            <div class="doc-img">
+                                <img src="images/doc-01.png">
+                                <div class="doc-price">120 rs/h</div>
+                            </div>
+                            <div class="doc-dets">
+                                <h6 class="doc-n">oamr mohamed ahmed</h6>
+                                <div class="doc-s">proffesor of cardiothoracic surgery</div>
+                                <div class="doc-rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="doc-extra-dets">
+                                    <div><img src="images/icons/time-date.png" > available on: 23 sep</div>
+                                    <div><img src="images/icons/clock.png" > from: 12:45 to: 5:50</div>
+                                    <div class="text-secondary"><img src="images/icons/coupon.png" > accept coupon discount</div>
+                                </div>
+                                <a href="#" class="doc-book-btn btn btn-secondary btn-sm">book now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="doc-item" data-aos="fade-in">
+                            <div class="doc-img">
+                                <img src="images/doc-01.png">
+                                <div class="doc-price">120 rs/h</div>
+                            </div>
+                            <div class="doc-dets">
+                                <h6 class="doc-n">oamr mohamed ahmed</h6>
+                                <div class="doc-s">proffesor of cardiothoracic surgery</div>
+                                <div class="doc-rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="doc-extra-dets">
+                                    <div><img src="images/icons/time-date.png" > available on: 23 sep</div>
+                                    <div><img src="images/icons/clock.png" > from: 12:45 to: 5:50</div>
+                                    <div class="text-secondary"><img src="images/icons/coupon.png" > accept coupon discount</div>
+                                </div>
+                                <a href="#" class="doc-book-btn btn btn-secondary btn-sm">book now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="doc-item" data-aos="fade-in">
+                            <div class="doc-img">
+                                <img src="images/doc-01.png">
+                                <div class="doc-price">120 rs/h</div>
+                            </div>
+                            <div class="doc-dets">
+                                <h6 class="doc-n">oamr mohamed ahmed</h6>
+                                <div class="doc-s">proffesor of cardiothoracic surgery</div>
+                                <div class="doc-rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="doc-extra-dets">
+                                    <div><img src="images/icons/time-date.png" > available on: 23 sep</div>
+                                    <div><img src="images/icons/clock.png" > from: 12:45 to: 5:50</div>
+                                    <div class="text-secondary"><img src="images/icons/coupon.png" > accept coupon discount</div>
+                                </div>
+                                <a href="#" class="doc-book-btn btn btn-secondary btn-sm">book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="h-why" class="spilitted-blk">
+        <div class="bgs-blk">
+            <div class="row">
+                <div class="col-md-6 bg-secondary" style="background: url(images/bg-pattern.png) repeat;background-size: 400px;"></div>
+                <div class="col-md-6" style="background: url(images/bg-lines.png) no-repeat;background-size: 100% auto;"></div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="features-blk text-white py-5">
+                            <div class="feature-item" data-aos="fade-in">
+                                <div class="feature-icon"><img src="images/icons/doctor.png" alt=""></div>
+                                <h5 class="feature-tit">best doctors</h5>
+                                <div class="feature-desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-in">
+                                <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+                                <h5 class="feature-tit">best doctors</h5>
+                                <div class="feature-desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-in">
+                                <div class="feature-icon"><img src="images/icons/doctor.png" alt=""></div>
+                                <h5 class="feature-tit">best doctors</h5>
+                                <div class="feature-desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="desc-blk py-5">
+                            <div class="heading-blk mb-4" data-aos="fade-down">
+                                <h3 class="heading-tit-wz-after font-weight-bold">why you have to choose, <br> trust our services <img src="images/heading-after.png"></h3>
+                            </div>
+                            <p class="font-reg-sm text-justify mb-4" data-aos="fade-in">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <a href="#" class="text-capitalize link-secondary link-wz-icon" data-aos="fade-up">more about us <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="h-book" class="bg-secondaryLight pt-5">
+        <div class="container">
+            <div class="heading-blk text-center mb-5" data-aos="fade-down">
+                <h3 class="heading-tit-wz-after font-weight-bold">how to book with tabaieb?<br><img src="images/heading-after.png"></h3>
+            </div>
+            <div id="booking-steps" class="features-blk features-blk-2 py-5">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="feature-item" data-aos="zoom-in">
+                            <div class="feature-num">1</div>
+                            <div class="feature-icon"><img class="w-100" src="images/icons/search.png"></div>
+                            <h5 class="feature-tit">search</h5>
+                            <div class="feature-desc">By speciatilty doctor name or fees</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="feature-item feature-special" data-aos="zoom-in">
+                            <div class="feature-num">2</div>
+                            <div class="feature-icon"><img class="w-100" src="images/icons/value.png"></div>
+                            <h5 class="feature-tit">compare & choose</h5>
+                            <div class="feature-desc">Based on real patients reviews</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="feature-item" data-aos="zoom-in">
+                            <div class="feature-num">3</div>
+                            <div class="feature-icon"><img class="w-100" src="images/icons/calendar.png"></div>
+                            <h5 class="feature-tit">booking</h5>
+                            <div class="feature-desc">pay at the clinic at no extra cost</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="h-download" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-8">
+                    <div class="heading-blk mb-4" data-aos="fade-down">
+                        <h3 class="heading-tit-wz-after font-weight-bold">download our application <br> to book easily <img src="images/heading-after.png"></h3>
+                    </div>
+                    <p class="font-reg-sm text-justify mb-4" data-aos="fade-in">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <div class="apps-blk" data-aos="fade-in">
+                        <a href="#"><img src="images/btn-apple.png" alt=""></a>
+                        <a href="#"><img src="images/btn-google.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-4">
+                    <img class="w-100" src="images/app.png" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="main-footer">
+    <div class="container">
+        <div class="footer-wrap">
+            <div>
+                <div class="footer-logo"><img src="images/logo-word.png" alt="Tabaieb Logo"></div>
+                <div class="footer-menu">
+                    <a href="#">about tabaieb</a>
+                    <a href="#">contact us</a>
+                    <a href="#">terms & conditions</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>

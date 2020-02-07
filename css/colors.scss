@@ -1,0 +1,127 @@
+$colors: (
+        main: #020202, // Body Main Text
+        primary: #020202, // headings
+        secondary: #27d6a6, // buttons and sub headings
+        
+        secondary2: rgba(19, 178, 134, 0.25),
+        secondary3: #13b286,
+        
+        secondaryHover: #1cad85, // buttons and sub headings
+        secondaryLight: #f1f8f6,
+        secondaryLight2: #cdf6ea,
+        lightPurple: #e6e3f3,
+        
+        
+        greyColor: #acb3bb,
+        greyColor2: #dce7ee,
+        greyColor3: #bbb8d3,
+        
+        yellowCollor: #ffc300,
+        secondaryTrans25: rgba(22, 194, 196, 0.25),
+        
+        mainGradColor1: #27d6a6, // Gradient Color 1 Intro Bg 
+        mainGradColor2: #16c2c5, // Gradient Color 2 Intro Bg
+        
+        blackColor: #000,
+        whiteColor: #fff,
+
+        selectionBg: #27d6a6,
+        selectionColor: #fff,
+        scrollTrackBg: #f1f1f1,
+        scrollThumbBg: #888,
+        scrollThumbHoverBg: #555,
+);
+
+$transition: (
+  main: all 0.5s ease
+);
+
+::-moz-selection, ::selection {color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::-webkit-scrollbar-track {background: map_get($colors, scrollTrackBg);}
+::-webkit-scrollbar-thumb {background: map_get($colors, scrollThumbBg);}
+::-webkit-scrollbar-thumb:hover {background: map_get($colors, scrollThumbHoverBg);}
+
+body{color: map-get($colors, main);}
+
+
+.bg-primary, .btn-primary
+{
+  background: map-get($colors, primary) !important;
+}
+.text-primary{
+  color: map-get($colors, primary) !important;
+}
+.border-primary{
+  border-color: map-get($colors, primary) !important;
+}
+.bg-secondary, .btn-secondary{
+  background-color:  map-get($colors, secondary) !important;
+}
+.text-secondary{
+  color: map-get($colors, secondary) !important;
+}
+.border-secondary{
+  border-color:  map-get($colors, secondary) !important;
+}
+.btn-primary, .btn-secondary{
+  color: map-get($colors, whiteColor) !important;
+}
+.btn-primary, .btn-secondary{border-color: transparent!important;}
+
+.bg-primary-gradient-x {
+  background: map-get($colors, mainGradColor2);
+  background: -moz-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: -webkit-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: -o-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: -ms-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: linear-gradient(to right, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, mainGradColor1)', endColorstr='map-get($colors, mainGradColor2)', GradientType=1);
+}
+
+.bg-secondaryLight{background-color: map-get($colors, secondaryLight )!important;}
+
+.text-light{color: map-get($colors, greyColor )!important;}
+.link-secondary{color: map-get($colors, secondary);}
+.link-secondary:hover{color: map-get($colors, secondaryHover);}
+
+/* NavBar */
+#main-header .navbar-nav .nav-item .nav-link{color: map-get($colors, primary)!important;}
+#main-header .navbar-nav .nav-item.active .nav-link, #main-header .navbar-nav .nav-item:hover .nav-link{color: map-get($colors, secondary)!important;}
+#main-header .extra-links .navbar-nav .nav-item:before{background: map-get($colors, lightPurple );}
+#main-header .navbar-nav .nav-item.active .nav-link:after{background: map-get($colors, secondary );}
+
+/* Footer */
+#main-footer{background: map-get($colors, greyColor2) ;}
+.footer-menu a{color: map-get($colors, primary);}
+.footer-menu a:hover{color: map-get($colors, secondary);}
+.footer-social a{color: map-get($colors, greyColor3);}
+.footer-social a:hover{color: map-get($colors, secondary);}
+
+/* Intro */
+.form-secondary .form-control{border-color: map-get($colors, secondary );}
+.form-secondary .form-control, .form-secondary .form-control::placeholder{color: map-get($colors, secondary );}
+.form-secondary .form-control:focus {box-shadow: 0 0 0 0.2rem map-get($colors, secondaryTrans25 );}
+.form-secondary .form-group i{color: map-get($colors, secondary);}
+
+/* Doctors */
+.doc-price{background: map-get($colors, secondaryLight2);color: map-get($colors, secondary);}
+.doc-dets{color: map-get($colors, greyColor );}
+.doc-n{color: map-get($colors, primary);}
+.doc-rating i.active{color: map-get($colors, yellowCollor);}
+
+/* Features */
+.feature-icon{background: map-get($colors, secondary3 );box-shadow: 0 0 0 5px map-get($colors, secondary2);}
+#h-book .feature-num{background-color: map-get($colors, secondary);}
+#h-book .feature-desc{color:map-get($colors, greyColor);}
+
+#h-book .feature-special .feature-icon{background: map-get($colors, whiteColor );box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);}
+#h-book .feature-special{background-color: map-get($colors, secondary);}
+#h-book .feature-special, #h-book .feature-special .feature-desc{color:map-get($colors, whiteColor)!important;}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img{
+  transition: map_get($transition, main);
+}
