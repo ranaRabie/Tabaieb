@@ -39,14 +39,6 @@ function initiateAnimation(){
     });
 }
 
-// function mobCloseMainMenu(){
-//     $('.navbar-collapse').delay(0).animate({top: '-100%'}, 1000);
-// }
-
-// function mobOpenMainMenu(){
-//     $('.navbar-collapse').delay(0).animate({top: '0'}, 1000);
-// }
-
 function mobCloseMainMenu(){
     // $('.navbar-collapse').delay(0).animate({left: '-300px'}, 1000);
     $('.navbar-collapse').fadeOut();
@@ -63,15 +55,27 @@ $(window).on('scroll', function(){
     fixedHeader();
 });
 
+function splittedBlksHeightHandling(){
+    if($(window).height() < 768){
+        let H = $('#h-why .features-blk').outerHeight(true);
+        $('#h-why .features-bg').innerHeight(H);
+    }
+}
+$(window).resize(function(){
+    console.log('resize');
+    splittedBlksHeightHandling();
+});
 $(document).ready(function () {
     fixedHeightParagraph();
     fixedHeightParagraph();
     initiateAnimation();
 
-    let H = $('#h-why .features-blk').outerHeight(true);
-    H = H + 64;
-    $('#h-why .features-bg').innerHeight(H);
-
+    setTimeout(function(){
+        splittedBlksHeightHandling();
+    }, 300);
+    
+    
+    
     try {
         $('.datepicker').datepicker();
     }
