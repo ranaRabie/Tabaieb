@@ -96,6 +96,10 @@ body {
   background: #27d6a6;
 }
 
+#navbar-toggler-lnk span {
+  background: #27d6a6;
+}
+
 /* Footer */
 #main-footer {
   background: #dce7ee;

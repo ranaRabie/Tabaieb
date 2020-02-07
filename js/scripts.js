@@ -2,7 +2,7 @@ function fixedHeader(){
     try {
         const headerDiv = document.getElementById("header-wrap");
         const navBar = document.getElementById('nav-bar');
-        if(window.pageYOffset  >= 35 && window.innerWidth >= 768){
+        if(window.pageYOffset  >= 35){
             headerDiv.classList.add('header-fixed');
             navBar.classList.remove('navbar-dark');
             navBar.classList.add('navbar-light');
@@ -39,12 +39,24 @@ function initiateAnimation(){
     });
 }
 
+// function mobCloseMainMenu(){
+//     $('.navbar-collapse').delay(0).animate({top: '-100%'}, 1000);
+// }
+
+// function mobOpenMainMenu(){
+//     $('.navbar-collapse').delay(0).animate({top: '0'}, 1000);
+// }
+
 function mobCloseMainMenu(){
-    $('.navbar-collapse').delay(0).animate({top: '-100%'}, 1000);
+    // $('.navbar-collapse').delay(0).animate({left: '-300px'}, 1000);
+    $('.navbar-collapse').fadeOut();
+    $('.navbar-collapse').removeClass('active-nav');
 }
 
 function mobOpenMainMenu(){
-    $('.navbar-collapse').delay(0).animate({top: '0'}, 1000);
+    // $('.navbar-collapse').delay(0).animate({left: '0'}, 1000);
+    $('.navbar-collapse').fadeIn();
+    $('.navbar-collapse').addClass('active-nav');
 }
 
 $(window).on('scroll', function(){
@@ -55,6 +67,11 @@ $(document).ready(function () {
     fixedHeightParagraph();
     fixedHeightParagraph();
     initiateAnimation();
+
+    let H = $('#h-why .features-blk').outerHeight(true);
+    H = H + 64;
+    $('#h-why .features-bg').innerHeight(H);
+
     try {
         $('.datepicker').datepicker();
     }

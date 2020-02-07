@@ -89,6 +89,7 @@ body{color: map-get($colors, main);}
 #main-header .navbar-nav .nav-item.active .nav-link, #main-header .navbar-nav .nav-item:hover .nav-link{color: map-get($colors, secondary)!important;}
 #main-header .extra-links .navbar-nav .nav-item:before{background: map-get($colors, lightPurple );}
 #main-header .navbar-nav .nav-item.active .nav-link:after{background: map-get($colors, secondary );}
+#navbar-toggler-lnk span{background: map-get($colors, secondary );}
 
 /* Footer */
 #main-footer{background: map-get($colors, greyColor2) ;}
