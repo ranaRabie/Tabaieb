@@ -49,23 +49,34 @@ body {
 }
 
 .bg-thirdly, .btn-thirdly {
-  background: #3ea3ff !important;
+  background: #3ea3fe !important;
 }
 
 .text-thirdly {
-  color: #3ea3ff !important;
+  color: #3ea3fe !important;
 }
 
 .border-thirdly {
-  border-color: #3ea3ff !important;
+  border-color: #3ea3fe !important;
 }
 
 .btn-primary, .btn-secondary, .btn-thirdly {
   color: #fff !important;
 }
 
-.btn-primary, .btn-secondary, .btn-thirdly {
+.btn-primary, .btn-secondary, .btn-thirdly,
+.btn-secondaryLight, .btn-thirdlyLight {
   border-color: transparent !important;
+}
+
+.btn-secondaryLight {
+  background: #cdf6ea !important;
+  color: #27d6a6 !important;
+}
+
+.btn-thirdlyLight {
+  background: #c4e3ff !important;
+  color: #3ea3fe !important;
 }
 
 .bg-primary-gradient-x {
@@ -87,7 +98,7 @@ body {
 }
 
 .text-light {
-  color: #acb3bb !important;
+  color: #7b7795 !important;
 }
 
 .link-secondary {
@@ -146,19 +157,19 @@ body {
 }
 
 #page-tit .intro-search .form-control, #page-tit .intro-search .form-control::-webkit-input-placeholder {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 #page-tit .intro-search .form-control, #page-tit .intro-search .form-control:-ms-input-placeholder {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 #page-tit .intro-search .form-control, #page-tit .intro-search .form-control::-ms-input-placeholder {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 #page-tit .intro-search .form-control, #page-tit .intro-search .form-control::placeholder {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 #page-tit .intro-search .form-control:focus {
@@ -167,7 +178,7 @@ body {
 }
 
 #page-tit .intro-search .form-group i {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 /* Intro */
@@ -210,24 +221,32 @@ body {
 }
 
 .doc-dets {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 .doc-n {
   color: #020202;
 }
 
+.doc-rating i {
+  color: #c1c9d1;
+}
+
 .doc-rating i.active {
   color: #ffc300;
 }
 
+.doc-status:before {
+  background: #736f8f;
+}
+
 .doc-status.active:before {
-  background: #6af16f;
+  background: #3cff4b;
 }
 
 .doc-badges .badge {
-  background-color: #e8f9fd;
-  color: #88dfe1;
+  background-color: #e5fafd;
+  color: #6ed9de;
 }
 
 .doc-aval-times .single-day-date {
@@ -236,12 +255,12 @@ body {
 }
 
 .doc-aval-times .single-time {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 .doc-aval-times .single-time:hover span,
 .doc-aval-times .single-time.active span {
-  background: #3ea3ff;
+  background: #3ea3fe;
 }
 
 .doc-aval-times .single-time:hover,
@@ -261,6 +280,15 @@ body {
   color: #fff;
 }
 
+/* Clients Opinion */
+.client-t-d {
+  color: #7b7795;
+}
+
+.client-op-txt {
+  color: #a8b0b9;
+}
+
 /* Features */
 .feature-icon {
   background: #13b286;
@@ -273,7 +301,7 @@ body {
 }
 
 #h-book .feature-desc {
-  color: #acb3bb;
+  color: #7b7795;
 }
 
 #h-book .feature-special .feature-icon {

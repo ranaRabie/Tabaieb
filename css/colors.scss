@@ -8,20 +8,26 @@ $colors: (
         
         secondaryHover: #1cad85, // buttons and sub headings
 
-        thirdly: #3ea3ff,
+        thirdly: #3ea3fe,
 
-        badgeBg: #e8f9fd,
-        badgeColor: #88dfe1,
+        badgeBg: #e5fafd,
+        badgeColor: #6ed9de,
 
-        activeStatus: #6af16f,
+        activeStatus: #3cff4b,
+        notActiveStatus: #736f8f,
 
         secondaryLight: #f1f8f6,
         secondaryLight2: #cdf6ea,
         lightPurple: #e6e3f3,
+
+        secondaryLight3: #bdf3e4,
+        thirdlyLight: #c4e3ff,
         
-        greyColor: #acb3bb,
+        greyColor: #7b7795,
         greyColor2: #dce7ee,
         greyColor3: #bbb8d3,
+        greyColor4: #c1c9d1,
+        greyColor5: #a8b0b9,
         
         yellowCollor: #ffc300,
         secondaryTrans25: rgba(22, 194, 196, 0.25),
@@ -86,7 +92,18 @@ body{color: map-get($colors, main);}
 .btn-primary, .btn-secondary, .btn-thirdly{
   color: map-get($colors, whiteColor) !important;
 }
-.btn-primary, .btn-secondary, .btn-thirdly{border-color: transparent!important;}
+.btn-primary, .btn-secondary, .btn-thirdly,
+.btn-secondaryLight, .btn-thirdlyLight{border-color: transparent!important;}
+
+.btn-secondaryLight{
+  background: map-get($colors, secondaryLight2) !important;
+  color: map-get($colors, secondary) !important;
+}
+.btn-thirdlyLight
+{
+  background: map-get($colors, thirdlyLight) !important;
+  color: map-get($colors, thirdly) !important;
+}
 
 .bg-primary-gradient-x {
   background: map-get($colors, mainGradColor2);
@@ -146,8 +163,10 @@ body{color: map-get($colors, main);}
 .doc-price{color: map-get($colors, secondary);}
 .doc-dets{color: map-get($colors, greyColor );}
 .doc-n{color: map-get($colors, primary);}
+.doc-rating i{color: map-get($colors, greyColor4);}
 .doc-rating i.active{color: map-get($colors, yellowCollor);}
 
+.doc-status:before{background: map-get($colors, notActiveStatus);}
 .doc-status.active:before{background: map-get($colors, activeStatus);}
 .doc-badges .badge{background-color: map-get($colors, badgeBg);color: map-get($colors, badgeColor);}
 
@@ -161,6 +180,10 @@ body{color: map-get($colors, main);}
 .doc-aval-times .owl-carousel .owl-nav .owl-prev:hover, .doc-aval-times .owl-carousel .owl-nav .owl-next:hover{background: map-get($colors, secondary)!important;}
 .doc-aval-times .owl-prev:before, .doc-aval-times .owl-next:before{color: map-get($colors, secondary);}
 .doc-aval-times .owl-prev:hover:before, .doc-aval-times .owl-next:hover:before{color: map-get($colors, whiteColor);}
+
+/* Clients Opinion */
+.client-t-d{color: map-get($colors, greyColor) ;}
+.client-op-txt{color: map-get($colors, greyColor5) ;}
 
 /* Features */
 .feature-icon{background: map-get($colors, secondary3 );box-shadow: 0 0 0 5px map-get($colors, secondary2);}
