@@ -7,10 +7,17 @@ $colors: (
         secondary3: #13b286,
         
         secondaryHover: #1cad85, // buttons and sub headings
+
+        thirdly: #3ea3ff,
+
+        badgeBg: #e8f9fd,
+        badgeColor: #88dfe1,
+
+        activeStatus: #6af16f,
+
         secondaryLight: #f1f8f6,
         secondaryLight2: #cdf6ea,
         lightPurple: #e6e3f3,
-        
         
         greyColor: #acb3bb,
         greyColor2: #dce7ee,
@@ -21,6 +28,9 @@ $colors: (
         
         mainGradColor1: #27d6a6, // Gradient Color 1 Intro Bg 
         mainGradColor2: #16c2c5, // Gradient Color 2 Intro Bg
+        
+        Grad2Color1: rgba(39, 214, 166, 0.95), // Gradient Color 1 Intro Bg 
+        Grad2Color2: rgba(39, 214, 166, 0.5), // Gradient Color 2 Intro Bg
         
         blackColor: #000,
         whiteColor: #fff,
@@ -63,10 +73,20 @@ body{color: map-get($colors, main);}
 .border-secondary{
   border-color:  map-get($colors, secondary) !important;
 }
-.btn-primary, .btn-secondary{
+.bg-thirdly, .btn-thirdly
+{
+  background: map-get($colors, thirdly) !important;
+}
+.text-thirdly{
+  color: map-get($colors, thirdly) !important;
+}
+.border-thirdly{
+  border-color: map-get($colors, thirdly) !important;
+}
+.btn-primary, .btn-secondary, .btn-thirdly{
   color: map-get($colors, whiteColor) !important;
 }
-.btn-primary, .btn-secondary{border-color: transparent!important;}
+.btn-primary, .btn-secondary, .btn-thirdly{border-color: transparent!important;}
 
 .bg-primary-gradient-x {
   background: map-get($colors, mainGradColor2);
@@ -76,6 +96,16 @@ body{color: map-get($colors, main);}
   background: -ms-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
   background: linear-gradient(to right, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, mainGradColor1)', endColorstr='map-get($colors, mainGradColor2)', GradientType=1);
+}
+
+#page-tit:before {
+  background: map-get($colors, Grad2Color2);
+  background: -moz-linear-gradient(left, map-get($colors, Grad2Color1) 0%, map-get($colors, Grad2Color2) 100%);
+  background: -webkit-linear-gradient(left, map-get($colors, Grad2Color1) 0%, map-get($colors, Grad2Color2) 100%);
+  background: -o-linear-gradient(left, map-get($colors, Grad2Color1) 0%, map-get($colors, Grad2Color2) 100%);
+  background: -ms-linear-gradient(left, map-get($colors, Grad2Color1) 0%, map-get($colors, Grad2Color2) 100%);
+  background: linear-gradient(to right, map-get($colors, Grad2Color1) 0%, map-get($colors, Grad2Color2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, Grad2Color1)', endColorstr='map-get($colors, Grad2Color2)', GradientType=1);
 }
 
 .bg-secondaryLight{background-color: map-get($colors, secondaryLight )!important;}
@@ -98,6 +128,13 @@ body{color: map-get($colors, main);}
 .footer-social a{color: map-get($colors, greyColor3);}
 .footer-social a:hover{color: map-get($colors, secondary);}
 
+/* Page Title */
+#page-tit .intro-search .form-control{border-color: map-get($colors, secondary );}
+#page-tit .intro-search .form-control, #page-tit .intro-search .form-control::placeholder{color: map-get($colors, greyColor );}
+#page-tit .intro-search .form-control:focus {box-shadow: 0 0 0 0.2rem map-get($colors, secondaryTrans25 );}
+#page-tit .intro-search .form-group i{color: map-get($colors, greyColor);}
+
+
 /* Intro */
 .form-secondary .form-control{border-color: map-get($colors, secondary );}
 .form-secondary .form-control, .form-secondary .form-control::placeholder{color: map-get($colors, secondary );}
@@ -105,10 +142,25 @@ body{color: map-get($colors, main);}
 .form-secondary .form-group i{color: map-get($colors, secondary);}
 
 /* Doctors */
-.doc-price{background: map-get($colors, secondaryLight2);color: map-get($colors, secondary);}
+.doc-img .doc-price{background: map-get($colors, secondaryLight2);}
+.doc-price{color: map-get($colors, secondary);}
 .doc-dets{color: map-get($colors, greyColor );}
 .doc-n{color: map-get($colors, primary);}
 .doc-rating i.active{color: map-get($colors, yellowCollor);}
+
+.doc-status.active:before{background: map-get($colors, activeStatus);}
+.doc-badges .badge{background-color: map-get($colors, badgeBg);color: map-get($colors, badgeColor);}
+
+.doc-aval-times .single-day-date{background-color: map-get($colors, secondary);color:#fff;}
+.doc-aval-times .single-time{color: map-get($colors, greyColor) ;}
+.doc-aval-times .single-time:hover span,
+.doc-aval-times .single-time.active span{background: map-get($colors, thirdly) ;}
+.doc-aval-times .single-time:hover,
+.doc-aval-times .single-time.active{color: map-get($colors, whiteColor);}
+
+.doc-aval-times .owl-carousel .owl-nav .owl-prev:hover, .doc-aval-times .owl-carousel .owl-nav .owl-next:hover{background: map-get($colors, secondary)!important;}
+.doc-aval-times .owl-prev:before, .doc-aval-times .owl-next:before{color: map-get($colors, secondary);}
+.doc-aval-times .owl-prev:hover:before, .doc-aval-times .owl-next:hover:before{color: map-get($colors, whiteColor);}
 
 /* Features */
 .feature-icon{background: map-get($colors, secondary3 );box-shadow: 0 0 0 5px map-get($colors, secondary2);}

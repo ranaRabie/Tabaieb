@@ -84,6 +84,13 @@ a:hover, .btn-link:hover{text-decoration: none;}
     display:block;background: url(../images/heading-after.png) no-repeat;
 } */
 
+/* Page Title */
+#page-tit{position: relative;padding: 25px 0;}
+#page-tit:before{content:'';position: absolute;top:0;left:0;width:100%;height:100%;}
+#page-tit h1{font-size: 2.1rem;text-transform: capitalize;font-weight: bold;position:relative;margin-bottom:0;}
+#page-tit .intro-search{background: transparent;padding: 0;margin-top: 10px;margin-bottom: -1rem;}
+#page-tit h1, #page-tit .intro-search label{color: #fff;}
+
 /* Intro */
 #home-intro{position: relative;}
 #home-intro:before{content:'';position: absolute;top:0;left:0;width:100%;height:100%;background-color: rgba(0,0,0,0.4);}
@@ -103,8 +110,9 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .docs-container{margin-bottom: -30px;}
 .doc-item{margin-bottom:30px;font-size:.9rem;padding:5px;background: #fff;border-radius: 5px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}
 .doc-img{position: relative;}
-.doc-img img{border-radius: 5px 5px 0 0;width:100%;height:150px;object-fit: cover;}
-.doc-price{font-size: .75rem;position: absolute;top:5px;right:5px;font-weight:bold;padding: 3px 5px;border-radius: 5px;text-transform: uppercase;}
+#h-docs .doc-img img{border-radius: 5px 5px 0 0;height:150px;object-fit: cover;}
+.doc-img img{border-radius: 5px ;width:100%;height: auto;max-height: 100%;}
+.doc-img .doc-price{font-size: .75rem;position: absolute;top:5px;right:5px;font-weight:bold;padding: 3px 5px;border-radius: 5px;text-transform: uppercase;}
 
 .doc-dets{margin: 10px 0;text-transform: capitalize;font-size: .75rem;font-weight:bold;}
 .doc-n{font-weight:bold;}
@@ -114,6 +122,38 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .doc-extra-dets > div:last-child{margin-bottom: 0;}
 .doc-extra-dets > div > img{width:15px;height:auto;margin-right:5px;}
 .doc-book-btn{margin-top: 10px;}
+
+.doc-status{font-weight: normal;display:inline-block;}
+.doc-status:before{content:'';width: 7px; height: 7px;border-radius: 50%;background: #000;display: inline-block;}
+.doc-plus-dets > div{margin-bottom: .3rem;}
+.doc-price del{margin-left: 7px;}
+.doc-badges .badge{font-size: inherit;}
+
+.doc-aval-times .single-day{max-width: 110px;margin: 0 auto;text-align:center;border-radius: 5px;overflow: hidden;border: 1px solid #ddd;box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+.doc-aval-times .single-day-date{padding: 7px;text-transform: capitalize;}
+.doc-aval-times .single-day-times{padding: 0 7px;}
+.doc-aval-times .single-time{cursor: pointer;padding: 5px 0;border-bottom: 1px solid #ddd;text-transform: uppercase;}
+.doc-aval-times .single-day-times .single-time:last-child{border-bottom: 0;}
+.doc-aval-times .single-time span{display: inline-block;padding: 0 3px;border-radius: 3px;}
+
+.doc-aval-times .owl-dots{display: none;}
+.doc-aval-times{position: relative;padding: 0 30px;}
+.doc-aval-times .owl-carousel .owl-nav .owl-prev, .doc-aval-times .owl-carousel .owl-nav .owl-next{position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background: #fff!important;
+    border: 1px solid #ddd;
+    border-radius: 3px;}
+.doc-aval-times .owl-prev{left: -30px;}
+.doc-aval-times .owl-next{right: -30px;}
+
+.doc-aval-times .owl-prev span, .doc-aval-times .owl-next span{display:none;}
+.doc-aval-times .owl-prev:before, .doc-aval-times .owl-next:before{content:'\f104';
+    font-family: 'Font Awesome 5 Free';font-weight: 900;
+}
+.doc-aval-times .owl-prev:before{content:'\f104';}
+.doc-aval-times .owl-next:before{content:'\f105';}
 
 /**/
 .spilitted-blk{position: relative;}
@@ -223,6 +263,8 @@ a:hover, .btn-link:hover{text-decoration: none;}
     .extra-links ul{flex-direction: row;}
     .extra-links .navbar-nav .nav-link{padding-left:.6rem;padding-right:.6rem;}
     #main-header .extra-links .navbar-nav .nav-item:first-child:before{display:none;}
+    /* Doctors */
+    .doc-aval-times{margin-top: 20px;}
 }
 
 /*Large devices (desktops, 992px and up)*/

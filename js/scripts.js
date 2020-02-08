@@ -73,6 +73,33 @@ $(document).ready(function () {
     setTimeout(function(){
         splittedBlksHeightHandling();
     }, 300);
+
+    if($('.doc-aval-times')){
+        $('.doc-aval-times .owl-carousel').owlCarousel({
+            items:3,
+            loop:false,
+            margin:10,
+            autoplay:false,
+            nav: true,
+            responsive:{
+                0:{
+                    items: 2
+                },
+                576:{
+                    items: 3
+                },
+                768:{
+                    items: 5
+                },
+                992:{
+                    items: 2,
+                },
+                1200:{
+                    items: 3,
+                }
+            }
+        });
+    }
     
     
     

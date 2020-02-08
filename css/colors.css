@@ -48,11 +48,23 @@ body {
   border-color: #27d6a6 !important;
 }
 
-.btn-primary, .btn-secondary {
+.bg-thirdly, .btn-thirdly {
+  background: #3ea3ff !important;
+}
+
+.text-thirdly {
+  color: #3ea3ff !important;
+}
+
+.border-thirdly {
+  border-color: #3ea3ff !important;
+}
+
+.btn-primary, .btn-secondary, .btn-thirdly {
   color: #fff !important;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-thirdly {
   border-color: transparent !important;
 }
 
@@ -61,6 +73,13 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#27d6a6), to(#16c2c5));
   background: linear-gradient(to right, #27d6a6 0%, #16c2c5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, mainGradColor1)', endColorstr='map-get($colors, mainGradColor2)', GradientType=1);
+}
+
+#page-tit:before {
+  background: rgba(39, 214, 166, 0.5);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 214, 166, 0.95)), to(rgba(39, 214, 166, 0.5)));
+  background: linear-gradient(to right, rgba(39, 214, 166, 0.95) 0%, rgba(39, 214, 166, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, Grad2Color1)', endColorstr='map-get($colors, Grad2Color2)', GradientType=1);
 }
 
 .bg-secondaryLight {
@@ -121,6 +140,36 @@ body {
   color: #27d6a6;
 }
 
+/* Page Title */
+#page-tit .intro-search .form-control {
+  border-color: #27d6a6;
+}
+
+#page-tit .intro-search .form-control, #page-tit .intro-search .form-control::-webkit-input-placeholder {
+  color: #acb3bb;
+}
+
+#page-tit .intro-search .form-control, #page-tit .intro-search .form-control:-ms-input-placeholder {
+  color: #acb3bb;
+}
+
+#page-tit .intro-search .form-control, #page-tit .intro-search .form-control::-ms-input-placeholder {
+  color: #acb3bb;
+}
+
+#page-tit .intro-search .form-control, #page-tit .intro-search .form-control::placeholder {
+  color: #acb3bb;
+}
+
+#page-tit .intro-search .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+}
+
+#page-tit .intro-search .form-group i {
+  color: #acb3bb;
+}
+
 /* Intro */
 .form-secondary .form-control {
   border-color: #27d6a6;
@@ -152,8 +201,11 @@ body {
 }
 
 /* Doctors */
-.doc-price {
+.doc-img .doc-price {
   background: #cdf6ea;
+}
+
+.doc-price {
   color: #27d6a6;
 }
 
@@ -167,6 +219,46 @@ body {
 
 .doc-rating i.active {
   color: #ffc300;
+}
+
+.doc-status.active:before {
+  background: #6af16f;
+}
+
+.doc-badges .badge {
+  background-color: #e8f9fd;
+  color: #88dfe1;
+}
+
+.doc-aval-times .single-day-date {
+  background-color: #27d6a6;
+  color: #fff;
+}
+
+.doc-aval-times .single-time {
+  color: #acb3bb;
+}
+
+.doc-aval-times .single-time:hover span,
+.doc-aval-times .single-time.active span {
+  background: #3ea3ff;
+}
+
+.doc-aval-times .single-time:hover,
+.doc-aval-times .single-time.active {
+  color: #fff;
+}
+
+.doc-aval-times .owl-carousel .owl-nav .owl-prev:hover, .doc-aval-times .owl-carousel .owl-nav .owl-next:hover {
+  background: #27d6a6 !important;
+}
+
+.doc-aval-times .owl-prev:before, .doc-aval-times .owl-next:before {
+  color: #27d6a6;
+}
+
+.doc-aval-times .owl-prev:hover:before, .doc-aval-times .owl-next:hover:before {
+  color: #fff;
 }
 
 /* Features */
