@@ -158,16 +158,22 @@ a:hover, .btn-link:hover{text-decoration: none;}
 
 /* Doctor Single */
 .doc-single{margin-bottom: -30px;}
-.doc-single-blk{margin-bottom: 30px;background: #fff;border: 1px solid #ddd;border-radius: 5px;box-shadow: 0 0 10px rgba(0,0,0,0.1);padding: 10px;}
+.doc-single-blk{margin-bottom: 30px;background: #fff;border: 1px solid #f2f1f8;border-radius: 5px;box-shadow: 0 0 10px rgba(0,0,0,0.1);padding: 10px;}
 
 /* Clients Opinion */
-.client-op-item{display:flex;}
+.client-op-item{display:flex;padding-bottom: 15px;margin-bottom: 15px;border-bottom: 1px solid #eae8f5;}
 .client-img{margin-right: 10px;flex: 0 0 70px;width:70px;height:70px;border-radius: 50%;overflow: hidden;}
 .client-img img{width:100%; min-height: 100%;}
 .client-n{margin-top: 15px;}
 .client-n, .client-t-d{font-weight: bold;text-transform: capitalize;}
 .client-t-d span{font-weight: uppercase;}
 .client-op-txt{text-align: justify;}
+
+.doc-form-review{position: relative;}
+.doc-form-review, .doc-form-review input::placeholder{font-size: .8rem;text-transform: capitalize;}
+.doc-form-review input{padding-right: 40px;padding-left: .75rem;}
+.doc-form-review button{position: absolute;top:0;right:0;}
+.doc-form-review button img{height: 20px;}
 
 /**/
 .spilitted-blk{position: relative;}

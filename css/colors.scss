@@ -194,6 +194,12 @@ body{color: map-get($colors, main);}
 #h-book .feature-special{background-color: map-get($colors, secondary);}
 #h-book .feature-special, #h-book .feature-special .feature-desc{color:map-get($colors, whiteColor)!important;}
 
+/* Forms */
+.form-control{border-color: map-get($colors, greyColor2);}
+.form-control, .form-control::placeholder{color: map-get($colors, greyColor3 );}
+.form-control:focus {border-color:map-get($colors, secondary ) ;box-shadow: 0 0 0 0.2rem map-get($colors, secondaryTrans25 );}
+
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,

@@ -318,6 +318,33 @@ body {
   color: #fff !important;
 }
 
+/* Forms */
+.form-control {
+  border-color: #dce7ee;
+}
+
+.form-control, .form-control::-webkit-input-placeholder {
+  color: #bbb8d3;
+}
+
+.form-control, .form-control:-ms-input-placeholder {
+  color: #bbb8d3;
+}
+
+.form-control, .form-control::-ms-input-placeholder {
+  color: #bbb8d3;
+}
+
+.form-control, .form-control::placeholder {
+  color: #bbb8d3;
+}
+
+.form-control:focus {
+  border-color: #27d6a6;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,
