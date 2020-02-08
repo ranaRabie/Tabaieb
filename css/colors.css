@@ -345,6 +345,27 @@ body {
           box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
 }
 
+/* Paging */
+.page-item .page-link {
+  color: #27d6a6;
+}
+
+.page-item:hover .page-link {
+  color: #1cad85;
+}
+
+.page-item.active .page-link {
+  border-color: #27d6a6;
+  background: #27d6a6;
+  color: #fff;
+}
+
+.page-item .page-link:focus {
+  border-color: #27d6a6;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,

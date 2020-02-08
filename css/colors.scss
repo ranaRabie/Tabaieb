@@ -199,6 +199,11 @@ body{color: map-get($colors, main);}
 .form-control, .form-control::placeholder{color: map-get($colors, greyColor3 );}
 .form-control:focus {border-color:map-get($colors, secondary ) ;box-shadow: 0 0 0 0.2rem map-get($colors, secondaryTrans25 );}
 
+/* Paging */
+.page-item .page-link{color: map-get($colors, secondary );}
+.page-item:hover .page-link{color: map-get($colors, secondaryHover );}
+.page-item.active .page-link{border-color: map-get($colors, secondary);background: map-get($colors, secondary );color: map-get($colors, whiteColor);}
+.page-item .page-link:focus{border-color:map-get($colors, secondary ) ;box-shadow: 0 0 0 0.2rem map-get($colors, secondaryTrans25 );}
 
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,

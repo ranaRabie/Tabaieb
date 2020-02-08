@@ -150,7 +150,7 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .doc-aval-times .owl-next{right: -30px;}
 
 .doc-aval-times .owl-prev span, .doc-aval-times .owl-next span{display:none;}
-.doc-aval-times .owl-prev:before, .doc-aval-times .owl-next:before{content:'\f104';
+.doc-aval-times .owl-prev:before, .doc-aval-times .owl-next:before{
     font-family: 'Font Awesome 5 Free';font-weight: 900;
 }
 .doc-aval-times .owl-prev:before{content:'\f104';}
@@ -223,6 +223,16 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .footer-social a{display: inline-block;background: #fff;width:20px;height:20px;
     border-radius: 2px;display: flex;align-items: center;justify-content: center;margin: 0 5px;
 }
+
+/* Paging */
+.page-item .page-link{margin: 5px;border-radius: 3px!important;}
+.page-item .page-link span{display: none;}
+.page-item .page-link[aria-label]:before{
+    font-family: 'Font Awesome 5 Free';font-weight: 900;
+}
+.paging .page-item:first-child .page-link[aria-label]:before{content:'\f104';}
+.paging .page-item:last-child .page-link[aria-label]:before{content:'\f105';}
+
 
 /*************** RESPONSIVE ********************/
 /*Extra small devices (portrait phones, less than 576px)*/
