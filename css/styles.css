@@ -166,7 +166,7 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .client-img img{width:100%; min-height: 100%;}
 .client-n{margin-top: 15px;}
 .client-n, .client-t-d{font-weight: bold;text-transform: capitalize;}
-.client-t-d span{font-weight: uppercase;}
+.client-t-d span{text-transform: uppercase;}
 .client-op-txt{text-align: justify;}
 
 .doc-form-review{position: relative;}
