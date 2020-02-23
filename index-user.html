@@ -63,8 +63,66 @@
                         <li class="nav-item">
                             <a class="nav-link" href="z_index-rtl.html"><i class="fas fa-globe"></i> ar</a>
                         </li>
+                        <li class="nav-item nav-item-wz-sub">
+                            <a class="nav-link" href="javascript:void(0)"><i class="fas fa-user"></i> user name</a>
+                            <ul>
+                                <li><a href="profile-personal-info.html">personal information</a></li>
+                                <li><a href="profile-appointments.html">appointments</a></li>
+                                <li><a href="profile-history.html">history</a></li><li><a href="profile-password.html">change password</a></li>
+                                <li><a href="#" class="text-danger">logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-wz-sub">
+                            <a class="nav-link user-self" href="javascript:void(0)"><i class="fas fa-bell"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification1.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>you have an appointment today at <span class="text-secondary">09:00PM</span></p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification2.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>you have a new important notification from tabaieb</p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification3.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>Dr. Mohamed Omar accepted your booking</p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification4.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>you have a new important notification from tabaieb</p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <a class="login-btn nav-link" href="javascript:void(0)">login</a>
+                            <a class="nav-link user-self active" href="inbox.html"><i class="fas fa-envelope"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -420,116 +478,6 @@
     </div>
 </footer>
 <!-- END Page Footer -->
-
-<div class="modals-container">
-    <!-- START Login Modal -->
-    <div class="modal fade reg-modal" tabindex="-1" id="loginModal" role="dialog">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="reg-modal-col reg-modal-col-1">
-                            <div class="modal-close">
-                                <a href="javascript:void(0)" class="text-light" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle"></i></a>
-                            </div>
-                            <div class="heading-blk mb-3" data-aos="fade-down">
-                                <h5 class="heading-tit-wz-after font-weight-bold">hi, <span class="text-secondary">login now</span><br><img src="images/heading-after.png"></h5>
-                            </div>
-                            <form action="" class="basic-form form-label-inline form-secondaryLight">
-                                <div class="form-group">
-                                    <label for="">email address:</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">password:</label>
-                                    <input type="password" class="form-control">
-                                </div>
-                                <div class="mb-1 text-center">
-                                    <button class="btn btn-thirdly text-capitalize">login</button>
-                                </div>
-                                <div class="mb-3 text-center font-weight-bold">
-                                    Don't have an account? <a href="javascript:void(0)" id="register-btn" class="text-secondary text-capitalize">sign up</a>
-                                </div>
-                            </form>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <div class="reg-modal-col reg-modal-col-2 bg-secondary">
-                            <img src="images/logo-white.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END Login Modal -->
-    <!-- START Register Modal -->
-    <div class="modal fade reg-modal" tabindex="-1" id="registerModal" role="dialog">
-        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="reg-modal-col reg-modal-col-1">
-                            <div class="modal-close">
-                                <a href="javascript:void(0)" class="text-light" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle"></i></a>
-                            </div>
-                            <div class="heading-blk mb-3" data-aos="fade-down">
-                                <h5 class="heading-tit-wz-after font-weight-bold">hi, <span class="text-secondary">let's create an account</span><br><img src="images/heading-after.png"></h5>
-                            </div>
-                            <form action="" class="basic-form form-label-inline form-secondaryLight">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">first name:</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">last name:</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">email address:</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">phone number:</label>
-                                    <input type="number" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">password:</label>
-                                    <input type="password" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">confirm password:</label>
-                                    <input type="password" class="form-control">
-                                </div>
-                                <div class="mb-1 text-center">
-                                    <button class="btn btn-thirdly text-capitalize">create account</button>
-                                </div>
-                                <div class="mb-3 text-center font-weight-bold">
-                                    Already have an account? <a href="javascript:void(0)" class="login-btn text-secondary text-capitalize">login</a>
-                                </div>
-                            </form>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <div class="reg-modal-col reg-modal-col-2 bg-secondary">
-                            <img src="images/logo-white.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END Register Modal -->
-</div>
-
 </div>
 </body>
 </html>

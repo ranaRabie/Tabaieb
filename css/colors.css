@@ -1,9 +1,9 @@
-::-moz-selection, ::-moz-selection {
+::-moz-selection {
   color: #fff;
   background: #27d6a6;
 }
 
-::-moz-selection, ::selection {
+::selection {
   color: #fff;
   background: #27d6a6;
 }
@@ -74,6 +74,11 @@ body {
   color: #27d6a6 !important;
 }
 
+.btn-secondaryLight2 {
+  background: #e5faf5 !important;
+  color: #27d6a6 !important;
+}
+
 .btn-thirdlyLight {
   background: #c4e3ff !important;
   color: #3ea3fe !important;
@@ -97,6 +102,14 @@ body {
   background-color: #f1f8f6 !important;
 }
 
+.bg-greyColor6 {
+  background-color: #fcfcfe !important;
+}
+
+.text-danger {
+  color: #fd6e79 !important;
+}
+
 .text-light {
   color: #7b7795 !important;
 }
@@ -110,7 +123,7 @@ body {
 }
 
 /* NavBar */
-#main-header .navbar-nav .nav-item .nav-link {
+#main-header .navbar-nav .nav-item .nav-link, .nav-item-wz-sub li a {
   color: #020202 !important;
 }
 
@@ -128,6 +141,23 @@ body {
 
 #navbar-toggler-lnk span {
   background: #27d6a6;
+}
+
+.nav-item-wz-sub li:hover, .nav-item-wz-sub li.active {
+  background-color: #e4f9f9;
+}
+
+.nav-item-wz-sub li a.text-danger {
+  color: #fd6e79 !important;
+}
+
+/* Header Extra Links */
+.user-self:before {
+  background-color: #fd606c;
+}
+
+.user-self.active:before {
+  background-color: #3cff4b;
 }
 
 /* Footer */
@@ -345,6 +375,16 @@ body {
           box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
 }
 
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #27d6a6;
+  background-color: #27d6a6;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+}
+
 /* Paging */
 .page-item .page-link {
   color: #27d6a6;
@@ -364,6 +404,84 @@ body {
   border-color: #27d6a6;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
+}
+
+/* Forms */
+label {
+  color: #020202;
+}
+
+.basic-form .form-control {
+  color: #020202;
+}
+
+.pay-radio input:checked + label .state::after {
+  background-color: #27d6a6;
+}
+
+.pay-radio input:checked + label {
+  border-color: #27d6a6;
+}
+
+.form-label-inline.form-secondaryLight .form-group .form-control {
+  color: #27d6a6;
+}
+
+.profile-body .form-label-inline.form-secondaryLight .form-group label {
+  color: #27d6a6;
+}
+
+.profile-body .form-label-inline.form-secondaryLight .form-group .form-control {
+  color: #7b7795;
+}
+
+/* Contact Us */
+.social-blk a {
+  color: #27d6a6;
+  background: #e5faf5;
+}
+
+.social-blk a:hover {
+  background: #27d6a6;
+  color: #e5faf5;
+}
+
+/* Profile */
+.user-list ul li a {
+  color: #020202;
+}
+
+.user-list ul li a:hover, .user-list ul li.active a {
+  color: #27d6a6;
+}
+
+.user-list ul li:before {
+  background: #27d6a6;
+}
+
+.app-item .app-dets span {
+  color: #7b7795;
+}
+
+.app-item.app-new .app-dets > div:nth-child(2) span {
+  color: #fd6e79;
+}
+
+.app-item .app-dets .app-control .btn.btn-thirdly {
+  background-color: #b1d9fe !important;
+}
+
+.app-item.app-new .app-dets .app-control .btn.btn-thirdly {
+  background-color: #3ea3fe !important;
+}
+
+.user-img:after {
+  border-color: #27d6a6;
+}
+
+/* Prescription */
+.pres-sub-header td {
+  color: #7b7795;
 }
 
 /* Transition */

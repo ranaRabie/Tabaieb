@@ -62,7 +62,6 @@ function splittedBlksHeightHandling(){
     }
 }
 $(window).resize(function(){
-    console.log('resize');
     splittedBlksHeightHandling();
 });
 $(document).ready(function () {
@@ -101,7 +100,19 @@ $(document).ready(function () {
         });
     }
     
-    
+    $('.nav-item-wz-sub').click(function(){
+        $('.nav-item-wz-sub').not($(this)).find('ul').slideUp('slow');
+        $(this).find('ul').slideToggle('slow');
+    });
+
+    $('.login-btn').click(function(){
+        $('#registerModal').modal('hide');
+        $('#loginModal').modal('show');
+    });
+    $('#register-btn').click(function(){
+        $('#loginModal').modal('hide');
+        $('#registerModal').modal('show');
+    });
     
     try {
         $('.datepicker').datepicker();

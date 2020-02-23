@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tabaieb</title>
+    <link rel="icon" href="images/favicon.png" type="image/png"> 
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -62,8 +63,66 @@
                         <li class="nav-item">
                             <a class="nav-link" href="z_index-rtl.html"><i class="fas fa-globe"></i> ar</a>
                         </li>
+                        <li class="nav-item nav-item-wz-sub">
+                            <a class="nav-link" href="javascript:void(0)"><i class="fas fa-user"></i> user name</a>
+                            <ul>
+                                <li><a href="profile-personal-info.html">personal information</a></li>
+                                <li><a href="profile-appointments.html">appointments</a></li>
+                                <li><a href="profile-history.html">history</a></li><li><a href="profile-password.html">change password</a></li>
+                                <li><a href="#" class="text-danger">logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-wz-sub">
+                            <a class="nav-link user-self" href="javascript:void(0)"><i class="fas fa-bell"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification1.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>you have an appointment today at <span class="text-secondary">09:00PM</span></p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification2.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>you have a new important notification from tabaieb</p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification3.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>Dr. Mohamed Omar accepted your booking</p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="notif-item">
+                                            <div class="notif-icon"><img src="images/notification4.png" ></div>
+                                            <div class="notif-dets">
+                                                <p>you have a new important notification from tabaieb</p>
+                                                <p><i class="far fa-clock"></i> 12:00AM</p>
+                                            </div>
+                                        </div>     
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">login</a>
+                            <a class="nav-link user-self active" href="inbox.html"><i class="fas fa-envelope"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +133,7 @@
 </header>
 <!-- END Page Header -->
 <!-- START Page Title -->
-<section id="page-tit" style="background: url(images/bg-main.png) no-repeat 50% 50%;background-size: cover;">
+<section id="page-tit" class="tit-wz-search" style="background: url(images/bg-main.png) no-repeat 50% 50%;background-size: cover;">
     <div class="container">
         <div class="page-tit-inner">
             <h1>find your doctor</h1>
@@ -128,7 +187,7 @@
 <!-- END Page Title -->
 <!-- START Main Content -->
 <section class="main-content">
-    <div id="search-pg" class="bg-secondaryLight py-5">
+    <div id="search-pg" class="bg-greyColor6 py-5">
         <div class="container">
             <!-- START Doctors Container -->
             <div class="docs-container">
@@ -997,6 +1056,14 @@
                 <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
             </div>
             
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <p class="py-2 mb-0 text-capitalize">
+                All rights reserved © Tabaieb 2020 | Developed BY
+               <a href="http://quicky-soft.com" target="_blank" class="text-secondary">Quicky Soft</a>
+            </p>
         </div>
     </div>
 </footer>
