@@ -98,6 +98,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, Grad2Color1)', endColorstr='map-get($colors, Grad2Color2)', GradientType=1);
 }
 
+.btn-danger {
+  background-color: #fd6e79 !important;
+}
+
 .bg-secondaryLight {
   background-color: #f1f8f6 !important;
 }
@@ -385,6 +389,10 @@ body {
           box-shadow: 0 0 0 0.2rem rgba(22, 194, 196, 0.25);
 }
 
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #27d6a6;
+}
+
 /* Paging */
 .page-item .page-link {
   color: #27d6a6;
@@ -477,6 +485,24 @@ label {
 
 .user-img:after {
   border-color: #27d6a6;
+}
+
+/* Doctor Profile */
+.prof-doc-stat .doc-stat {
+  color: #fd6e79;
+}
+
+.prof-doc-stat.active .doc-stat {
+  color: #27d6a6;
+}
+
+.doc-apps-tabs a.active {
+  background-color: #27d6a6;
+  color: #fff !important;
+}
+
+.doc-apps-tabs a:hover {
+  color: #27d6a6;
 }
 
 /* Prescription */

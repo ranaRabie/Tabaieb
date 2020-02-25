@@ -99,10 +99,40 @@ $(document).ready(function () {
             }
         });
     }
+
+    let docStatusText;
+    $('.prof-doc-stat input').change(function(){
+        if($(this).is(":checked")){
+            $('.prof-doc-stat input').each(function(){
+                $(this).prop('checked', true);
+            });
+        }else{
+            $('.prof-doc-stat input').each(function(){
+                $(this).prop('checked', false);
+            });
+        }
+        if($('.prof-doc-stat').hasClass('active')){
+            $('.prof-doc-stat').removeClass('active');
+            if($('body').hasClass('rtl')){
+                docStatusText = 'غير فعال';
+            }else{
+                docStatusText = 'not active';
+            }
+        }else{
+            $('.prof-doc-stat').addClass('active');
+            if($('body').hasClass('rtl')){
+                docStatusText = 'فعال';
+            }else{
+                docStatusText = 'active';
+            }
+            
+        }
+        $('.doc-stat').text(docStatusText);
+    });
     
-    $('.nav-item-wz-sub').click(function(){
-        $('.nav-item-wz-sub').not($(this)).find('ul').slideUp('slow');
-        $(this).find('ul').slideToggle('slow');
+    $('.nav-item-wz-sub > a').click(function(){
+        $('.nav-item-wz-sub').not($(this).closest('.nav-item-wz-sub')).find('ul').slideUp('slow');
+        $(this).closest('.nav-item-wz-sub').find('ul').slideToggle('slow');
     });
 
     $('.login-btn').click(function(){

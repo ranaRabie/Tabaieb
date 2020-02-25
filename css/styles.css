@@ -356,7 +356,7 @@ input[type=number] {
 .user-list ul li:last-child{border-bottom: 0;}
 .user-list ul li:before{content:'';width:3px;height:20px;display:none;}
 .user-list ul li.active:before{display:inline-block;}
-.user-list ul li a{font-weight:bold;font-size:.7rem;display:inline-block;padding: 15px 5px;text-transform: capitalize;}
+.user-list ul li a{display: block;width: 100%;font-weight:bold;font-size:.7rem;display:inline-block;padding: 15px 5px;text-transform: capitalize;}
 .user-list ul li:last-child a{padding-bottom: 0;}
 
 .apps-container{margin-bottom: -20px;}
@@ -377,8 +377,8 @@ input[type=number] {
 .app-remove:hover{color: #f8f7fc;background: #c8c5db;}
 
 /* Profile Forms */
-.profile-body form.form-sm{max-width: 400px;font-size:.7rem;}
-.profile-body form.form-md{max-width: 500px;font-size:.7rem;}
+.form-sm{max-width: 400px;font-size:.7rem;}
+.form-md{max-width: 500px;font-size:.7rem;}
 .profile-body form label, .profile-body form .form-control{font-size:.7rem;}
 .user-img-upload{margin-bottom: 1rem;}
 .user-img-upload input{display:none;}
@@ -414,6 +414,14 @@ input[type=number] {
 
 .pres-sub-header{margin:2rem 0;}
 .pres-desc{margin-bottom:2rem;}
+
+/* Doctor Profile */
+.prof-doc-stat{display: flex;justify-content: space-between;align-items: center;}
+.doc-info-logo{width:90px;}
+.doc-apps-tabs{display:inline-flex;border:1px solid #f3f3f3;border-radius: 3px;padding:5px;}
+.doc-apps-tabs a{font-size:.8rem;text-transform: capitalize;font-weight:bold;}
+.doc-apps-tabs a:before{display:none;}
+.doc-apps-tabs a.active:before{display:block;}
 
 /*************** RESPONSIVE ********************/
 /*Extra small devices (portrait phones, less than 576px)*/
