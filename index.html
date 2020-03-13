@@ -435,24 +435,52 @@
                             <div class="heading-blk mb-3" data-aos="fade-down">
                                 <h5 class="heading-tit-wz-after font-weight-bold">hi, <span class="text-secondary">login now</span><br><img src="images/heading-after.png"></h5>
                             </div>
-                            <form action="" class="basic-form form-label-inline form-secondaryLight">
-                                <div class="form-group">
-                                    <label for="">email address:</label>
-                                    <input type="email" class="form-control">
+                            <div class="nav nav-pills text-capitalize justify-content-center mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-doctor-tab" data-toggle="pill" href="#v-pills-doctor" role="tab" aria-controls="v-pills-doctor" aria-selected="true">doctor</a>
+                                <a class="nav-link" id="v-pills-patient-tab" data-toggle="pill" href="#v-pills-patient" role="tab" aria-controls="v-pills-patient" aria-selected="false">patient</a>
+                            </div>
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-doctor" role="tabpanel" aria-labelledby="v-pills-doctor-tab">
+                                    <form action="" class="basic-form form-label-inline form-secondaryLight">
+                                        <div class="form-group">
+                                            <label for="">email address:</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">password:</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div>
+                                            <a href="reset-pass.html" class="text-secondary text-capitalize mb-3 d-block">forget your password?</a>
+                                        </div>
+                                        <div class="mb-1 text-center">
+                                            <button class="btn btn-thirdly text-capitalize">login</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">password:</label>
-                                    <input type="password" class="form-control">
+                                <div class="tab-pane fade" id="v-pills-patient" role="tabpanel" aria-labelledby="v-pills-patient-tab">
+                                    <form action="" class="basic-form form-label-inline form-secondaryLight">
+                                        <div class="form-group">
+                                            <label for="">email address:</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">password:</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div>
+                                            <a href="reset-pass.html" class="text-secondary text-capitalize mb-3 d-block">forget your password?</a>
+                                        </div>
+                                        <div class="mb-1 text-center">
+                                            <button class="btn btn-thirdly text-capitalize">login</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="mb-1 text-center">
-                                    <button class="btn btn-thirdly text-capitalize">login</button>
-                                </div>
-                                <div class="mb-3 text-center font-weight-bold">
-                                    Don't have an account? <a href="javascript:void(0)" id="register-btn" class="text-secondary text-capitalize">sign up</a>
-                                </div>
-                            </form>
+                            </div>
+                            <div class="mb-3 text-center font-weight-bold">
+                                Don't have an account? <a href="javascript:void(0)" id="register-btn" class="text-secondary text-capitalize">sign up</a>
+                            </div>
                         </div>
-                        
                     </div>
                     <div class="col-md-6">
                         <div class="reg-modal-col reg-modal-col-2 bg-secondary">

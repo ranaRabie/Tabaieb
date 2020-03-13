@@ -215,6 +215,11 @@ body {
   color: #7b7795;
 }
 
+/* Login */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  border-color: #27d6a6;
+}
+
 /* Intro */
 .form-secondary .form-control {
   border-color: #27d6a6;

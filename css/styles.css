@@ -316,6 +316,9 @@ input[type=number] {
 .modal-close a{position: relative;left: -7px;font-size:1.2rem;}
 .rtl .modal-close a{right: -7px;left: auto;}
 
+.nav-pills .nav-link{padding:0 1rem;border-radius: 0;background: transparent!important;color:#020202!important;font-weight:bold;}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{border-bottom: 2px solid;}
+
 /* Profile */
 .profile-side{border: 1px solid #f6f6f8;}
 .profile-side, .user-dets{border-radius: 5px;padding: 10px;}
