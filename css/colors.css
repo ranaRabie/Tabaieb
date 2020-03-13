@@ -510,6 +510,20 @@ label {
   color: #7b7795;
 }
 
+/* Meadical Documents */
+.doc-delete {
+  background-color: #fd6e79;
+}
+
+/* Inbox */
+.inbox-chat-user-img:after {
+  background: #fd6e79;
+}
+
+.active .inbox-chat-user-img:after {
+  background: #3cff4b;
+}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,

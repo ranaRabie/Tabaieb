@@ -274,6 +274,15 @@ label{color: map-get($colors, primary);}
 /* Prescription */
 .pres-sub-header td{color: map-get($colors, greyColor );}
 
+/* Meadical Documents */
+.doc-delete{
+  background-color: map-get($colors, danger );
+}
+
+/* Inbox */
+.inbox-chat-user-img:after{background: map-get($colors, danger);}
+.active .inbox-chat-user-img:after{background: map-get($colors, activeStatus);}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,

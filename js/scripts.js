@@ -65,6 +65,10 @@ $(window).resize(function(){
     splittedBlksHeightHandling();
 });
 $(document).ready(function () {
+    let rtlCheck = false;
+    if($('body').hasClass('rtl')){
+        rtlCheck = true;
+    }
     fixedHeightParagraph();
     fixedHeightParagraph();
     initiateAnimation();
@@ -75,6 +79,7 @@ $(document).ready(function () {
 
     if($('.doc-aval-times')){
         $('.doc-aval-times .owl-carousel').owlCarousel({
+            rtl: rtlCheck,
             items:3,
             loop:false,
             margin:10,
@@ -142,6 +147,27 @@ $(document).ready(function () {
     $('#register-btn').click(function(){
         $('#loginModal').modal('hide');
         $('#registerModal').modal('show');
+    });
+
+    $('.msg-send-upload input').change(function(){
+        let inputVal = $(this).val();
+        inputVal = inputVal.split('\\');
+        inputVal = inputVal[2];
+        $('.uploads').append('<span class="text-light">'+inputVal+'</span>');
+    });
+
+
+    $('.inbox-chat-item').click(function(){
+        if($(document).innerWidth() < 768){
+            $('.inbox-chats').hide();
+            $('.inbox-msgs').show();
+        }
+    });
+    $('.back-to-chats').click(function(){
+        if($(document).innerWidth() < 768){
+            $('.inbox-msgs').hide();
+            $('.inbox-chats').show();
+        }
     });
     
     try {
