@@ -529,6 +529,11 @@ label {
   background: #3cff4b;
 }
 
+/* Notifications */
+#notifications-pg .doc-single-blk > a {
+  color: #020202;
+}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,

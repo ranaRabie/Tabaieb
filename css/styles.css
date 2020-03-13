@@ -93,6 +93,11 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .notif-icon img{width: 100%;}
 .notif-item p{margin:0;text-align: initial;}
 .notif-item p:last-child{color: #56575b;font-size:.6rem;margin-top:5px;display: flex;align-items: center;}
+.notif-item p:last-child i{margin-right:3px;}
+.rtl .notif-item p:last-child i{margin-left:3px;margin-right:0;}
+
+#notifications-pg .notif-item{font-size:1rem;text-transform: capitalize;}
+#notifications-pg .notif-item p:last-child{font-size:.7rem;}
 
 /* Headings */
 .heading-blk{text-transform: capitalize;font-weight: bold;}

@@ -285,6 +285,9 @@ label{color: map-get($colors, primary);}
 .inbox-chat-user-img:after{background: map-get($colors, danger);}
 .active .inbox-chat-user-img:after{background: map-get($colors, activeStatus);}
 
+/* Notifications */
+#notifications-pg .doc-single-blk > a{color: map-get($colors, primary);}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,
