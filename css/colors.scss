@@ -261,6 +261,7 @@ label{color: map-get($colors, primary);}
 
 .app-item .app-dets span{color: map-get($colors, greyColor);}
 .app-item.app-new .app-dets > div:nth-child(2) span{color: map-get($colors, danger);}
+.app-item.app-reject .app-dets > div:nth-child(2) span{color: map-get($colors, danger);}
 
 .app-item .app-dets .app-control .btn.btn-thirdly{background-color: map-get($colors, thirdlyDisabled )!important;}
 .app-item.app-new .app-dets .app-control .btn.btn-thirdly{background-color: map-get($colors, thirdly )!important;}

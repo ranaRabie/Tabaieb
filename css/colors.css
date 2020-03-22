@@ -480,6 +480,10 @@ label {
   color: #fd6e79;
 }
 
+.app-item.app-reject .app-dets > div:nth-child(2) span {
+  color: #fd6e79;
+}
+
 .app-item .app-dets .app-control .btn.btn-thirdly {
   background-color: #b1d9fe !important;
 }

@@ -36,8 +36,11 @@ a:hover, .btn-link:hover{text-decoration: none;}
 
 .user-icon{width: 100px;height:100px;border-radius: 50%;}
 
+.font-reg-norm{font-size: 1rem!important;}
 .font-reg{font-size: .9rem;}
 .font-reg-sm{font-size: .75rem;}
+
+.cursor-pointer{cursor: pointer;}
 
 .link-wz-icon i{margin-left: 3px;transition: all 0.5s ease;}
 .rtl .link-wz-icon i{margin-right: 3px;margin-left: 0;}
@@ -165,6 +168,8 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .doc-aval-times .single-time{cursor: pointer;padding: 5px 0;border-bottom: 1px solid #ddd;text-transform: uppercase;}
 .doc-aval-times .single-day-times .single-time:last-child{border-bottom: 0;}
 .doc-aval-times .single-time span{display: inline-block;padding: 0 3px;border-radius: 3px;}
+.doc-aval-times .single-time.disabled{pointer-events: none;}
+.doc-aval-times .single-time.disabled span{background: #eaeaea;color: #fff;}
 
 .doc-aval-times .owl-dots{display: none;}
 .doc-aval-times{position: relative;padding: 0 30px;}
@@ -268,7 +273,7 @@ label{text-transform: capitalize;font-size:.85rem;font-weight:bold;}
 .pay-methods-blk{display:flex;margin: 0 -10px;}
 .pay-methods-blk > div{width:28%;flex: 0 0 28%;margin: 0 10px;}
 .pay-radio input{display: none;}
-.pay-radio label{display:block;position: relative; display: flex;align-items: center;justify-content: center;width:100%;border: 1px solid transparent;background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.07);border-radius: 5px;overflow: hidden;padding: 20px 10px 10px;}
+.pay-radio label{display:block;position: relative; display: flex;align-items: center;justify-content: center;width:100%;border: 1px solid transparent;background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.07);border-radius: 5px;overflow: hidden;padding: 20px 10px 10px;height: calc(100% - .5rem);}
 .state{position:absolute;top:3px;right:3px;width:20px;height:20px;border-radius: 50%;background-color: #fff;border:1px solid #e4e3ee;overflow:hidden;display:flex;align-items:center;justify-content: center;}
 .rtl .state{left:3px;right:auto;}
 .pay-radio label .state:after{content:'';width:11px;height:11px;border-radius: 50%;background-color: #fff;display:block;}
@@ -412,7 +417,7 @@ input[type=number] {
 /* Doctor Profile */
 .prof-doc-stat{display: flex;justify-content: space-between;align-items: center;}
 .doc-info-logo{width:90px;}
-.doc-apps-tabs{display:inline-flex;border:1px solid #f3f3f3;border-radius: 3px;padding:5px;}
+.doc-apps-tabs{display:inline-flex;border:1px solid #f3f3f3;border-radius: 3px;padding:5px;flex-wrap: wrap;justify-content: center;align-items: center;}
 .doc-apps-tabs a{font-size:.8rem;text-transform: capitalize;font-weight:bold;}
 .doc-apps-tabs a:before{display:none;}
 .doc-apps-tabs a.active:before{display:block;}
@@ -487,6 +492,15 @@ input[type=number] {
 .uploads span:after{content:'|';display:inline-block;padding:0 8px;}
 .uploads span:last-child:after{content:'';}
 
+/* Privacy Policy */
+#privacy-pg h1,
+#privacy-pg h2,
+#privacy-pg h3,
+#privacy-pg h4,
+#privacy-pg h5,
+#privacy-pg h6{text-transform: capitalize;font-weight:bold;}
+#privacy-pg ul, #privacy-pg ol{list-style-position: inside;}
+
 /*************** RESPONSIVE ********************/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -515,6 +529,9 @@ input[type=number] {
     .app-img{display:none;}
     .app-dets b, .app-dets span{display:block;}
     .form-group-wz-absolute-btn{padding-bottom: 38px!important;}
+    /* Payment */
+    .pay-methods-blk > div{width:26%;flex: 0 0 26%;}
+    .pay-radio label img{max-width: 100%;}
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
