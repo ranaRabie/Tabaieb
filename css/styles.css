@@ -429,6 +429,16 @@ input[type=number] {
 .doc-delete:hover{opacity: 0.8;}
 .med-doc-item img{border-radius: 5px;}
 
+/* Appointments */
+.appointment-day-item.form-group{overflow: visible;}
+.appointment-day-header{display:flex;justify-content:space-between;align-items:center;}
+.appointment-time-item{border-bottom: 1px solid #ececf1;margin-bottom: 1rem;}
+.appointment-day-body .appointment-time-item:last-child{border-bottom: 0;margin-bottom: 0;}
+
+/* Time Picker */
+.wickedpicker{width:150px;}
+.wickedpicker__controls{padding: 0;}
+
 /**************** Inbox ****************/
 /* Inbox Chats */
 .inbox-chats input, .inbox-msgs input{font-size:.8rem;}

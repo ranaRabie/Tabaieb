@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="wickepicker/wickedpicker.min.css">
+    
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/colors.css">
     <script src="js/jquery.min.js"></script>
@@ -19,6 +22,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+
+    <script src="wickepicker/wickedpicker.min.js"></script>
+    
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -193,7 +199,7 @@
                     </div>
                     <div class="col-md-8 col-lg-9">
                         <div class="profile-body">
-                            <form class="basic-form form-sm form-label-inline">
+                            <form class="basic-form form-label-inline">
                                 <div class="heading-blk mb-2">
                                     <h5 class="heading-tit-wz-after font-weight-bold">edit <span class="text-secondary">information</span><br><img src="images/heading-after.png"></h5>
                                 </div>
@@ -204,17 +210,112 @@
                                         <div class="upload-icon bg-secondary text-white"><i class="fas fa-camera"></i></div>
                                     </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">user name:</label>
-                                    <input type="text" class="form-control" value="userName12">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">email address:</label>
-                                    <input type="email" class="form-control" value="user@email.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">phone number:</label>
-                                    <input type="number" class="form-control" value="09000990999">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">first name (en):</label>
+                                            <input type="text" class="form-control" value="userName12">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">last name (en):</label>
+                                            <input type="text" class="form-control" value="userName12">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">first name (ar):</label>
+                                            <input type="text" class="form-control" value="userName12">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">last name (ar):</label>
+                                            <input type="text" class="form-control" value="userName12">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">description (en):</label>
+                                            <input type="text" class="form-control" value="description">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">description (ar):</label>
+                                            <input type="text" class="form-control" value="description">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">title (en):</label>
+                                            <input type="text" class="form-control" value="title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">title (ar):</label>
+                                            <input type="text" class="form-control" value="title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">email address:</label>
+                                            <input type="email" class="form-control" value="user@email.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">email address:</label>
+                                            <input type="email" class="form-control" value="user@email.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">phone number:</label>
+                                            <input type="number" class="form-control" value="09000990999">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">civil id:</label>
+                                            <input type="number" class="form-control" value="09000990999">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">category:</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">sub category:</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">gender:</label>
+                                            <select class="form-control">
+                                                <option>female</option>
+                                                <option>male</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">price:</label>
+                                            <input type="number" class="form-control" value="000">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="heading-blk mb-2 mt-2">
                                     <h5 class="heading-tit-wz-after font-weight-bold">prescription <span class="text-secondary">information</span><br><img src="images/heading-after.png"></h5>
@@ -226,53 +327,130 @@
                                         <div class="upload-icon bg-secondary text-white"><i class="fas fa-camera"></i></div>
                                     </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">doctor name:</label>
-                                    <input type="text" class="form-control" value="doctorName12">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">doctor name:</label>
+                                            <input type="text" class="form-control" value="doctorName12">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">doctor title:</label>
+                                            <input type="text" class="form-control" value="doctor title here">
+                                        </div>        
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="">description:</label>
+                                            <input type="text" class="form-control" value="description description description">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">doctor title:</label>
-                                    <input type="text" class="form-control" value="doctor title here">
+                                <div>
+                                    <button class="btn btn-thirdly text-capitalize btn-sm">save changes</button>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">description:</label>
-                                    <input type="text" class="form-control" value="description description description">
-                                </div>
+                            </form>
+                            <hr class="my-4">
+                            <form class="basic-form form-label-inline">
                                 <div class="heading-blk mb-2 mt-2">
                                     <h5 class="heading-tit-wz-after font-weight-bold">appointments <span class="text-secondary">time</span><br><img src="images/heading-after.png"></h5>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">day from:</label>
-                                            <input type="text" class="form-control" value="sunday">
-                                        </div>
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">sunday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">day to:</label>
-                                            <input type="text" class="form-control" value="sunday">
+                                    <div class="appointment-day-body">
+                                        <div class="appointment-time-item">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class='form-group'>
+                                                        <label>from:</label>
+                                                        <input type="text" class="timepicker form-control"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class='form-group'>
+                                                        <label>to:</label>
+                                                        <input type="text" class="timepicker form-control"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="appointment-time-item">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class='form-group'>
+                                                        <label>from:</label>
+                                                        <input type="text" class="timepicker form-control"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class='form-group'>
+                                                        <label>to:</label>
+                                                        <input type="text" class="timepicker form-control"/>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">time from:</label>
-                                            <input type="text" class="form-control" value="10:30 AM">
-                                        </div>
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">monday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">time to:</label>
-                                            <input type="text" class="form-control" value="06:30 PM">
-                                        </div>
+                                    <div class="appointment-day-body">
+                                        <!-- Append Times Here -->
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">appointment:</label>
-                                    <input type="text" class="form-control" value="2 H">
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">tuesday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
+                                    </div>
+                                    <div class="appointment-day-body">
+                                        <!-- Append Times Here -->
+                                    </div>
                                 </div>
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">wednesday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
+                                    </div>
+                                    <div class="appointment-day-body">
+                                        <!-- Append Times Here -->
+                                    </div>
+                                </div>
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">thursday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
+                                    </div>
+                                    <div class="appointment-day-body">
+                                        <!-- Append Times Here -->
+                                    </div>
+                                </div>
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">friday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
+                                    </div>
+                                    <div class="appointment-day-body">
+                                        <!-- Append Times Here -->
+                                    </div>
+                                </div>
+                                <div class="appointment-day-item form-group d-block p-2">
+                                    <div class="appointment-day-header my-2">
+                                        <p class="text-primary font-weight-bold text-capitalize m-0">saturday</p>
+                                        <a class="add-period text-secondary text-capitalize font-reg-sm"><i class="fas fa-plus-circle"></i> add period</a>
+                                    </div>
+                                    <div class="appointment-day-body">
+                                        <!-- Append Times Here -->
+                                    </div>
+                                </div>
+                                
                                 <div>
                                     <button class="btn btn-thirdly text-capitalize btn-sm">save changes</button>
                                 </div>

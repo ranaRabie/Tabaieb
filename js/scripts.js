@@ -170,6 +170,7 @@ $(document).ready(function () {
         }
     });
     
+    $('.timepicker').wickedpicker();
     try {
         $('.datepicker').datepicker();
     }

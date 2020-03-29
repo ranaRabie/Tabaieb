@@ -538,6 +538,20 @@ label {
   color: #020202;
 }
 
+/* Time Picker */
+.wickedpicker__title {
+  background-color: #27d6a6;
+  color: #fff;
+}
+
+.wickedpicker__controls__control-down, .wickedpicker__controls__control-up {
+  color: #020202;
+}
+
+.wickedpicker__controls__control-down:hover, .wickedpicker__controls__control-up:hover {
+  color: #3ea3fe;
+}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,

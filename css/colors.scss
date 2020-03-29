@@ -289,6 +289,11 @@ label{color: map-get($colors, primary);}
 /* Notifications */
 #notifications-pg .doc-single-blk > a{color: map-get($colors, primary);}
 
+/* Time Picker */
+.wickedpicker__title{background-color: map-get($colors, secondary);color:#fff;}
+.wickedpicker__controls__control-down, .wickedpicker__controls__control-up {color: map-get($colors, primary );}
+.wickedpicker__controls__control-down:hover, .wickedpicker__controls__control-up:hover {color: map-get($colors, thirdly );}
+
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,
 #header-wrap,
