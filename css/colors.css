@@ -20,6 +20,14 @@
   background: #555;
 }
 
+.doc-clients::-webkit-scrollbar-thumb {
+  background: #27d6a6;
+}
+
+.doc-clients::-webkit-scrollbar-track {
+  background: #e5faf5;
+}
+
 body {
   color: #020202;
 }
@@ -84,6 +92,16 @@ body {
   color: #3ea3fe !important;
 }
 
+.btn-outline-secondary {
+  border: 1px solid #27d6a6 !important;
+  color: #27d6a6 !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #27d6a6 !important;
+  color: #fff !important;
+}
+
 .bg-primary-gradient-x {
   background: #16c2c5;
   background: -webkit-gradient(linear, left top, right top, from(#27d6a6), to(#16c2c5));
@@ -104,6 +122,10 @@ body {
 
 .bg-secondaryLight {
   background-color: #f1f8f6 !important;
+}
+
+.bg-secondaryLight4 {
+  background-color: #e4f9f9 !important;
 }
 
 .bg-greyColor6 {
@@ -512,6 +534,11 @@ label {
 
 .doc-apps-tabs a:hover {
   color: #27d6a6;
+}
+
+/* Prescriptions */
+.pres-item, .cert-item {
+  background: #fafefd;
 }
 
 /* Prescription */

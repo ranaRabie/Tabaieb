@@ -66,10 +66,9 @@
                         <li class="nav-item nav-item-wz-sub">
                             <a class="nav-link" href="javascript:void(0)"><i class="fas fa-user"></i> user name</a>
                             <ul>
-                                <li class="active"><a href="profile-personal-info.html">personal information</a></li>
+                                <li><a href="profile-personal-info.html">personal information</a></li>
                                 <li><a href="profile-appointments.html">appointments</a></li>
-                                <li><a href="profile-history.html">history</a></li>
-                                <li><a href="profile-password.html">change password</a></li>
+                                <li><a href="profile-history.html">history</a></li><li><a href="profile-password.html">change password</a></li>
                                 <li><a href="#" class="text-danger">logout</a></li>
                             </ul>
                         </li>
@@ -137,116 +136,122 @@
 <section id="page-tit" style="background: url(images/bg-main.png) no-repeat 50% 50%;background-size: cover;">
     <div class="container">
         <div class="page-tit-inner">
-            <h1>my profile</h1>
+            <h1>my prescriptions</h1>
         </div>
     </div>
 </section>
 <!-- END Page Title -->
 <!-- START Main Content -->
 <section class="main-content">
-    <div id="profile-pg" class="py-5 bg-greyColor6">
-        <!-- START Contact Block -->
+    <div class="py-5 bg-greyColor6">
         <div class="container">
             <div class="doc-single-about doc-single-blk" data-aos="fade-in">
-                <div class="row">
-                    <div class="col-md-4 col-lg-3">
-                        <div class="profile-side">
-                            <div class="user-dets">
-                                <div><a href="profile-edit.html" class="btn btn-secondaryLight2 btn-sm"><i class="fas fa-pencil-alt"></i></a></div>
-                                <div class="user-img"><img src="images/doc-01.png" ></div>
-                                <div class="user-info">
-                                    <div class="user-n">israa adel ba</div>
-                                    <div class="user-m text-light">israa@gmail.com</div>
-                                    <div class="user-w text-thirdly"><img src="images/icons/wallet.png" > 2546 RS</div>
+                <div class="prescriptions-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="pres-item">
+                                <table>
+                                    <tr>
+                                        <td>prescription no:</td>
+                                        <td class="text-light">111111111</td>
+                                    </tr>
+                                    <tr>
+                                        <td>doctor name:</td>
+                                        <td class="text-light">name name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescription date:</td>
+                                        <td class="text-light">23 - 3 - 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescriptions status:</td>
+                                        <td class="text-secondary">medicine received</td>
+                                    </tr>
+                                </table>
+                                <div class="pres-link">
+                                    <a href="#" class="text-secondary text-capitalize">show file now</a>
                                 </div>
-                            </div>
-                            <div class="user-list">
-                                <ul>
-                                    <li class="active"><a href="profile-personal-info.html">personal information</a></li>
-                                    <li><a href="profile-appointments.html">my appointments</a></li>
-                                    <li><a href="profile-history.html">my history</a></li>
-                                    <li><a href="profile-password.html">change password</a></li>
-                                    <li><a class="text-danger" href="#">log out</a></li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-8 col-lg-9">
-                        <div class="profile-body">
-                            <div class="heading-blk-2-sides">
-                                <div class="heading-blk mb-2">
-                                    <h5 class="heading-tit-wz-after font-weight-bold">personal <span class="text-secondary">information</span><br><img src="images/heading-after.png"></h5>
-                                </div>
-                                <a href="prescriptions.html" class="text-secondary link-underline text-capitalize mx-2">my prescriptions</a>
-                            </div>
-                            
-                            <form class="basic-form form-label-inline form-secondaryLight">
-                                <div class="form-group">
-                                    <label for="">user name:</label>
-                                    <input type="text" class="form-control" value="userName12" disabled>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">email address:</label>
-                                    <input type="email" class="form-control" value="user@email.com" disabled>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">phone number:</label>
-                                    <input type="number" class="form-control" value="09000990999" disabled>
-                                </div>
-                                <div class="form-group form-group-wz-absolute-btn">
-                                    <label for="">my wallet balance:</label>
-                                    <input type="text" class="form-control" value="2564 RS" disabled>
-                                    <a href="payment.html" class="btn btn-thirdlyLight btn-sm absolute-btn">charge now</a>
-                                </div>
-                            </form>
-                            
-                            <div class="heading-blk-2-sides">
-                                <div class="heading-blk mb-2 mt-2">
-                                    <h5 class="heading-tit-wz-after font-weight-bold">medical <span class="text-secondary">history</span><br><img src="images/heading-after.png"></h5>
-                                </div>
-                                <a data-toggle="modal" data-target="#med-his-modal" class="btn btn-secondary text-capitalize btn-sm px-4">add new</a>
-                            </div>
-                            <div class="med-his-container">
-                                <div class="med-his-item">
-                                    <div class="med-his-head">
-                                        <div class="tit-time mb-2">
-                                            <h6 class="tit text-primary m-0">medical history title</h6>
-                                            <div class="time text-secondary">23 - 3 - 2020</div>
-                                        </div>
-                                        <div class="med-his-usr mb-2 text-capitalize text-secondary bg-secondaryLight">added by doctor ahmed</div>
-                                    </div>
-                                    <div  class="med-his-body mb-2">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, accusamus fugit?
-                                    </div>
-                                    <div  class="med-his-foot">
-                                        <a href="#" class="text-secondary text-capitalize" target="_blank">show prescription file</a>
-                                    </div>
-                                    
-                                </div>
-                                <div class="med-his-item">
-                                    <div class="med-his-head">
-                                        <div class="tit-time mb-2">
-                                            <h6 class="tit text-primary m-0">medical history title</h6>
-                                            <div class="time text-secondary">23 - 3 - 2020</div>
-                                        </div>
-                                        <div class="med-his-usr mb-2 text-capitalize text-secondary bg-secondaryLight">added by doctor ahmed</div>
-                                    </div>
-                                    <div  class="med-his-body mb-2">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, accusamus fugit?
-                                    </div>
-                                    <div  class="med-his-foot">
-                                        <a href="#" class="text-secondary text-capitalize" target="_blank">show prescription file</a>
-                                    </div>
-                                    
+                        <div class="col-md-6">
+                            <div class="pres-item">
+                                <table>
+                                    <tr>
+                                        <td>prescription no:</td>
+                                        <td class="text-light">111111111</td>
+                                    </tr>
+                                    <tr>
+                                        <td>doctor name:</td>
+                                        <td class="text-light">name name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescription date:</td>
+                                        <td class="text-light">23 - 3 - 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescriptions status:</td>
+                                        <td class="text-secondary">medicine received</td>
+                                    </tr>
+                                </table>
+                                <div class="pres-link">
+                                    <a href="#" class="text-secondary text-capitalize">show file now</a>
                                 </div>
                             </div>
-                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pres-item">
+                                <table>
+                                    <tr>
+                                        <td>prescription no:</td>
+                                        <td class="text-light">111111111</td>
+                                    </tr>
+                                    <tr>
+                                        <td>doctor name:</td>
+                                        <td class="text-light">name name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescription date:</td>
+                                        <td class="text-light">23 - 3 - 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescriptions status:</td>
+                                        <td class="text-secondary">medicine received</td>
+                                    </tr>
+                                </table>
+                                <div class="pres-link">
+                                    <a href="#" class="text-secondary text-capitalize">show file now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pres-item">
+                                <table>
+                                    <tr>
+                                        <td>prescription no:</td>
+                                        <td class="text-light">111111111</td>
+                                    </tr>
+                                    <tr>
+                                        <td>doctor name:</td>
+                                        <td class="text-light">name name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescription date:</td>
+                                        <td class="text-light">23 - 3 - 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prescriptions status:</td>
+                                        <td class="text-secondary">medicine received</td>
+                                    </tr>
+                                </table>
+                                <div class="pres-link">
+                                    <a href="#" class="text-secondary text-capitalize">show file now</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END Contact Block -->
     </div>
 </section>
 <!-- END Main Content -->
@@ -280,46 +285,6 @@
     </div>
 </footer>
 <!-- END Page Footer -->
-
-<div>
-    <div class="modal fade" id="med-his-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-                <div class="modal-close">
-                    <a href="javascript:void(0)" class="text-light" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle"></i></a>
-                </div>
-                <div class="heading-blk mb-2 mt-2">
-                    <h6 class="heading-tit-wz-after font-weight-bold">add new medical <span class="text-secondary">information</span><br><img src="images/heading-after.png"></h6>
-                </div>
-                <form class="form-label-inline">
-                    <div class="form-group">
-                        <label>disease name:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>date:</label>
-                        <input type="text" class="form-control datepicker">
-                    </div>
-                    <div class="form-group d-block">
-                        <label for="desc1">Description:</label>
-                        <textarea id="desc1" class="form-control"></textarea>
-                    </div>
-                    <div class="up-control-container up-field-container">
-                        <input id="doc-up" type="file" class="d-none up-field" >
-                        <label for="doc-up" class="up-control m-0 text-uppercase cursor-pointer">
-                            <span>upload document</span>
-                            <span class="btn btn-secondary btn-sm">upload document</span>
-                        </label>
-                        <div class="uploads"></div>
-                    </div>
-                    <button class="btn btn-thirdly text-capitalize mt-3">save changes</button>
-                </form>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
 </div>
 </body>
 </html>

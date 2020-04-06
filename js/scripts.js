@@ -169,8 +169,21 @@ $(document).ready(function () {
             $('.inbox-chats').show();
         }
     });
+
+    $('.up-field').change(function(){
+        let fieldVal = $(this).val();
+        fieldVal = fieldVal.split('\\');
+        fieldVal = fieldVal[2];
+        let uploadHTML = '<span class="d-block">'+fieldVal+'</span>'
+        $(this).closest('.up-field-container').find('.uploads').append(uploadHTML);
+    });
     
-    $('.timepicker').wickedpicker();
+    try{
+        $('.timepicker').wickedpicker();
+    }catch(err){
+
+    }
+    
     try {
         $('.datepicker').datepicker();
     }

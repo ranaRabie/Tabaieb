@@ -30,9 +30,14 @@ body, .main-wrapper{overflow-x: hidden;}
 /* GENERAL */
 a:hover, .btn-link:hover{text-decoration: none;}
 
+.link-underline{text-decoration: underline!important;}
+.link-underline:hover{text-decoration: none!important;}
+
 .btn{position: relative;border-width: 0;overflow:hidden;}
 .btn:before{content: '';height:0;width:100%;display: block;position: absolute;left:0;right:0;top:0;background: rgba(0,0,0,0.015);}
 .btn:hover:before{height: 100%;}
+
+.btn-xs{font-size: .675rem;}
 
 .user-icon{width: 100px;height:100px;border-radius: 50%;}
 
@@ -105,6 +110,8 @@ a:hover, .btn-link:hover{text-decoration: none;}
 /* Headings */
 .heading-blk{text-transform: capitalize;font-weight: bold;}
 .heading-tit-wz-after img{max-width: 90%;}
+.heading-blk-2-sides{display: flex;align-items: center;justify-content:space-between;}
+.heading-blk-2-sides a{cursor:pointer;}
 
 /* Page Title */
 #page-tit{position: relative;padding: 80px 0;}
@@ -193,6 +200,9 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .doc-single-blk{margin-bottom: 30px;background: #fff;border-radius: 5px;box-shadow: 0 0 5px rgba(0,0,0,0.05);border: 1px solid #ececec;padding: 10px;}
 
 /* Clients Opinion */
+.doc-clients{max-height: 300px;overflow-y: auto;padding-right: 10px;margin-bottom:1.3rem;}
+.rtl .doc-clients{padding-left: 10px;padding-right: 0;}
+.doc-clients::-webkit-scrollbar{width:4px;border-radius: 10px;}
 .client-op-item{display:flex;padding-bottom: 15px;margin-bottom: 15px;border-bottom: 1px solid #eae8f5;}
 .client-img{margin-right: 10px;flex: 0 0 70px;width:70px;height:70px;border-radius: 50%;overflow: hidden;}
 .rtl .client-img{margin-left: 10px;margin-right: 0;}
@@ -288,6 +298,17 @@ label{text-transform: capitalize;font-size:.85rem;font-weight:bold;}
 .form-label-inline.form-secondaryLight .form-group{background-color: #f0fffa;border-color: transparent;}
 .form-label-inline .form-group input{background-color: transparent!important;}
 textarea.form-control{height: 165px;}
+
+.form-label-inline .form-group textarea{background: transparent;resize: none;}
+.up-control-container{color: #78778c;
+    background-color: #faf9fd;
+    border: 1px solid #f1f1f5;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 3px 3px 3px 10px;}
+.up-control{display: flex;
+    align-items: center;
+    justify-content: space-between;}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -388,7 +409,35 @@ input[type=number] {
 .rtl .form-group-wz-absolute-btn{padding-left: 112px;padding-right: 0;}
 .absolute-btn{position:absolute;right:5px;bottom:5px;}
 .rtl .absolute-btn{left:5px;right:auto;}
-.form-plain .btn{font-size:.7rem;}
+/* .form-plain .btn{font-size:.7rem;} */
+
+/* Medical History */
+/* .med-his-container{margin-bottom: -15px;} */
+.med-his-head{display: flex;align-items: center;justify-content:space-between;}
+.med-his-item{margin-bottom: 30px;font-size: .85rem;border: 1px solid #f1f1f1;padding:1rem;border-radius: 10px;}
+.med-his-item .tit-time{display: flex;align-items: center;}
+.med-his-item .tit{text-transform: capitalize;
+    font-weight: bold;}
+.med-his-item .tit:after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #020202;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.med-his-usr{padding: .3rem;border-radius: 7px;font-size: .7rem;}
+.med-his-foot a{text-decoration: underline;}
+.med-his-foot a:hover{text-decoration: none;}
+
+/* Prescriptions */
+.pres-item, .cert-item{padding: 1rem;text-transform: capitalize;margin:15px 0;}
+.pres-item tr td:first-child{font-weight:bold;}
+.pres-item td{padding: .2rem .5rem;}
+.pres-item .pres-link, .cert-item .cert-link{display:inline-block;margin: 0 .5rem;}
+.pres-item .pres-link:before, .cert-item .cert-link:before{content:'';margin: 10px 0;width:100%;height:1px;display:block;background: #27d6a6 !important;}
+.cert-item h6{margin: 0 .5rem;}
 
 /* Prescription */
 #prescription-pg{position: relative;}
@@ -516,6 +565,9 @@ input[type=number] {
 @media (max-width: 575.98px) {
     /* Header*/
     .extra-links ul{font-size: .6rem;}
+    /* Heading */
+    .heading-blk-2-sides {flex-direction: column;justify-content: flex-start;align-items: self-start;}
+    .heading-blk-2-sides a{display:inline-block;margin-bottom: 15px;}
     /* Notifications */
     .nav-item-wz-sub ul{max-width: 260px;right:-30px;}
     .rtl .nav-item-wz-sub ul{left:-30px;right:auto;}
@@ -542,6 +594,10 @@ input[type=number] {
     /* Payment */
     .pay-methods-blk > div{width:26%;flex: 0 0 26%;}
     .pay-radio label img{max-width: 100%;}
+    /* Medical History */
+    .med-his-head, .med-his-item .tit-time{flex-direction: column;align-items:flex-start;justify-content: flex-start;}
+    .med-his-item .tit:after{display: none;}
+    .med-his-item .time{margin-top: 5px;}
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {

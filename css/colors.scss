@@ -24,6 +24,7 @@ $colors: (
         secondaryLight3: #bdf3e4,
         secondaryLight4: #e4f9f9,
         secondaryLight5: #e5faf5,
+        secondaryLight6: #fafefd,
         
         lightPurple: #e6e3f3,
 
@@ -65,6 +66,10 @@ $transition: (
 ::-webkit-scrollbar-track {background: map_get($colors, scrollTrackBg);}
 ::-webkit-scrollbar-thumb {background: map_get($colors, scrollThumbBg);}
 ::-webkit-scrollbar-thumb:hover {background: map_get($colors, scrollThumbHoverBg);}
+
+.doc-clients::-webkit-scrollbar-thumb{background: map-get($colors, secondary);}
+.doc-clients::-webkit-scrollbar-track{background: map-get($colors, secondaryLight5);}
+
 
 body{color: map-get($colors, main);}
 
@@ -117,6 +122,9 @@ body{color: map-get($colors, main);}
   background: map-get($colors, thirdlyLight) !important;
   color: map-get($colors, thirdly) !important;
 }
+.btn-outline-secondary{border: 1px solid map-get($colors, secondary)!important;color:map-get($colors, secondary)!important;};
+.btn-outline-secondary:hover{background-color: map-get($colors, secondary)!important;color:#fff!important;};
+
 
 .bg-primary-gradient-x {
   background: map-get($colors, mainGradColor2);
@@ -141,6 +149,7 @@ body{color: map-get($colors, main);}
 .btn-danger{background-color: map-get($colors, danger )!important;}
 
 .bg-secondaryLight{background-color: map-get($colors, secondaryLight )!important;}
+.bg-secondaryLight4{background-color: map-get($colors, secondaryLight4 )!important;}
 .bg-greyColor6{background-color: map-get($colors, greyColor6)!important;}
 
 .text-danger{ color: map-get($colors, danger )!important;}
@@ -273,6 +282,9 @@ label{color: map-get($colors, primary);}
 .prof-doc-stat.active .doc-stat{color: map-get($colors, secondary);}
 .doc-apps-tabs a.active{background-color: map-get($colors, secondary);color: #fff!important;}
 .doc-apps-tabs a:hover{color: map-get($colors, secondary);;}
+
+/* Prescriptions */
+.pres-item, .cert-item{background: map-get($colors, secondaryLight6);}
 
 /* Prescription */
 .pres-sub-header td{color: map-get($colors, greyColor );}
