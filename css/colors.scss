@@ -125,6 +125,8 @@ body{color: map-get($colors, main);}
 .btn-outline-secondary{border: 1px solid map-get($colors, secondary)!important;color:map-get($colors, secondary)!important;};
 .btn-outline-secondary:hover{background-color: map-get($colors, secondary)!important;color:#fff!important;};
 
+.btn-light1{background: #ccc;color: #fff;}
+.btn-light1.active{background: #ccc;color: red;}
 
 .bg-primary-gradient-x {
   background: map-get($colors, mainGradColor2);

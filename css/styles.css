@@ -52,6 +52,8 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .link-wz-icon:hover i{margin-left: 6px;}
 .rtl .link-wz-icon:hover i{margin-right: 6px;margin-left: 0;}
 
+.text-initial{text-align:initial!important;}
+
 /* HEADER */
 #header-wrap{padding: 5px 0;}
 #header-wrap, #header-wrap .navbar{transition: all 0.5s ease;}
@@ -143,7 +145,7 @@ a:hover, .btn-link:hover{text-decoration: none;}
 #h-docs{background: url(../images/bg-half-logo.png) no-repeat left bottom;background-size: auto 80%;}
 .rtl #h-docs{background: url(../images/bg-half-logo.png) no-repeat right bottom;background-size: auto 80%;}
 .docs-container{margin-bottom: -30px;}
-.doc-item{margin-bottom:30px;font-size:.9rem;padding:5px;background: #fff;border-radius: 5px;box-shadow: 0 0 5px rgba(0,0,0,0.05);border: 1px solid #ececec;}
+.doc-item{height: calc( 100% - 30px);margin-bottom:30px;font-size:.9rem;padding:5px;background: #fff;border-radius: 5px;box-shadow: 0 0 5px rgba(0,0,0,0.05);border: 1px solid #ececec;}
 .doc-img{position: relative;}
 #h-docs .doc-img img{border-radius: 5px 5px 0 0;height:150px;object-fit: cover;}
 .doc-img img{border-radius: 5px ;width:100%;height: auto;max-height: 100%;}
@@ -559,6 +561,11 @@ input[type=number] {
 #privacy-pg h5,
 #privacy-pg h6{text-transform: capitalize;font-weight:bold;}
 #privacy-pg ul, #privacy-pg ol{list-style-position: inside;}
+
+/* Call */
+#call-container{padding: 1rem;position:fixed;top:0;left:0;right:0;width:100%;height:100%;background-color: rgba(0,0,0,0.4);z-index:1009;display:flex;align-items:center;justify-content: center;}
+.call-inner{border-radius: 5px;overflow:hidden;width:100%;height:100%;max-width:600px;max-height:600px;}
+.video-wrapper{background-color: #000;width:100%;height:100%;}
 
 /*************** RESPONSIVE ********************/
 /*Extra small devices (portrait phones, less than 576px)*/
