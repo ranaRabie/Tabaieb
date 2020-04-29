@@ -563,9 +563,60 @@ input[type=number] {
 #privacy-pg ul, #privacy-pg ol{list-style-position: inside;}
 
 /* Call */
-#call-container{padding: 1rem;position:fixed;top:0;left:0;right:0;width:100%;height:100%;background-color: rgba(0,0,0,0.4);z-index:1009;display:flex;align-items:center;justify-content: center;}
-.call-inner{border-radius: 5px;overflow:hidden;width:100%;height:100%;max-width:600px;max-height:600px;}
-.video-wrapper{background-color: #000;width:100%;height:100%;}
+.call-inner-container, .call-header, .call-footer{display:flex;}
+.call-inner-container{align-items:stretch;border: 1px solid;margin: 3rem 0;border-radius:5px;overflow: hidden;}
+#call-container.fs .call-inner-container{width:100vw;height: 94vh;margin: 0;}
+#call-container.fs .call-inner-container{color:#eee;}
+
+.call-blk{width:70%;flex:0 0 70%;}
+.call-blk, .chat-blk{padding:15px;}
+.chat-blk{width:30%;flex: 0 0 30%;border-left:1px solid;}
+
+
+.call-header{justify-content:flex-end;}
+.call-footer{justify-content:center;}
+.call-icon{width:40px;height:40px;margin:0 5px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex: 0 0 auto;border-radius:50%;background: #736f8f;color:#fff!important;cursor:pointer;}
+.call-icon .unaval{display:none;}
+.call-header .call-icon{margin:0;}
+
+.call-body{position: relative;}
+.call-wrapper{margin: 1rem 0;width:100%;border-radius: 5px;height:500px;max-height:calc( 100vh - 300px);background:#000;overflow:hidden;}
+.call-wrapper iframe, .call-wrapper video, .call-wrapper img{width:100%;height:100%;}
+.transmitter-wrapper{position:absolute;bottom:1rem;left:1rem;width:100px;border-radius:5px;overflow: hidden;border:3px solid #fff;}
+.transmitter-wrapper img, .transmitter-wrapper iframe, .transmitter-wrapper video{width:100%;height:auto;}
+
+
+
+/* Call Chat */
+.chat-header, .recipient-data, .chat-item{display:flex;}
+.chat-header{margin: 0 -15px;padding: 0 15px 15px;font-size:.75rem;align-items:center;justify-content:space-between;border-bottom: 1px solid;}
+.recipient-data .usr-ico{width:40px;height:40px;}
+.rec-tit{text-transform:capitalize;margin: 0 10px;}
+.rec-tit h6{font-weight:bold;margin: 0;}
+#hide-chat{cursor:pointer;}
+
+.chat-body{margin: 0 -15px;padding: 15px;font-size:.7rem;height: calc(100vh - 292px);overflow-y:auto;}
+#call-container.fs .chat-body{height: calc(100vh - 182px);}
+.chat-item{margin-bottom: 10px;}
+.chat-item h6{font-size:.8rem;font-weight:bold;margin: 3px 0;text-transform:capitalize;}
+.chat-item p{margin: 0;}
+.chat-item-dets{margin: 0 10px;}
+
+.chat-footer{margin: 0 -15px;padding: 15px 15px 0;border-top:1px solid;}
+.chat-footer .form-control, .chat-footer .form-control::placeholder{font-size:.75rem;}
+
+
+
+.call-inner-container, .chat-blk, .chat-header, .chat-footer{border-color:#d6d6d6;}
+.usr-ico{width:30px;height:30px;border-radius:50%;}
+.chat-body::-webkit-scrollbar{width:4px;}
+
+.call-blk{transition: all 0.5s ease;}
+
+#call-container.hidden-chat .chat-blk{width:0;padding:0;flex: 0 0 0;overflow: hidden;}
+#call-container.hidden-chat .call-blk{width:100%;flex: 0 0 100%;}
+#call-container.hidden-chat .call-blk #toggle-chat .unaval{display:block;}
+#call-container.hidden-chat .call-blk #toggle-chat .aval{display:none;}
 
 /*************** RESPONSIVE ********************/
 /*Extra small devices (portrait phones, less than 576px)*/

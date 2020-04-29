@@ -61,6 +61,34 @@ function splittedBlksHeightHandling(){
         $('#h-why .features-bg').innerHeight(H);
     }
 }
+
+
+function toggleFullscreen(elem) {
+    elem = elem || document.documentElement;
+    if (!document.fullscreenElement && !document.mozFullScreenElement &&
+      !document.webkitFullscreenElement && !document.msFullscreenElement) {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      } else if (elem.mozRequestFullScreen) {
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
+    }
+}
+
 $(window).resize(function(){
     splittedBlksHeightHandling();
 });
@@ -177,7 +205,19 @@ $(document).ready(function () {
         let uploadHTML = '<span class="d-block">'+fieldVal+'</span>'
         $(this).closest('.up-field-container').find('.uploads').append(uploadHTML);
     });
-    
+
+    $('#toggle-fs').click(function() {
+        let fsBlk = document.getElementById('call-container');
+        toggleFullscreen(fsBlk);
+        $('#call-container').toggleClass('fs');
+    });
+    $('#hide-chat').click(function(){
+        $('#call-container').addClass('hidden-chat');
+    });
+    $('#toggle-chat').click(function(){
+        $('#call-container').toggleClass('hidden-chat');
+    });
+
     try{
         $('.timepicker').wickedpicker();
     }catch(err){
